@@ -13,6 +13,9 @@ summaryLength = 50
 #googleAnalytics = "UA-123-45"
 #disqusShortname = "XYW"
 
+# Pasta onde estarão salvos as publicações (mudei para esta no caso)
+publishDir = "docs/"
+
 [permalinks]
   posts = "/:year/:month/:title/"
   page = "/:slug/"

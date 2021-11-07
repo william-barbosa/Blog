@@ -1,6 +1,6 @@
 # Hugo variables
 #
-baseurl = "https://william-barbosa.github.io/Blog/"
+baseurl = "https://william-barbosa.github.io/"
 languageCode = "en-us"
 title = "Blog William Barbosa"
 theme = "hugo-theme-bootstrap4-blog"

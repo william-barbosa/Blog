@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>R Markdown on Blog William Barbosa</title>
-    <link>https://william-barbosa.github.io/tags/r-markdown/</link>
+    <link>https://william-barbosa.github.io/Blog/tags/r-markdown/</link>
     <description>Recent content in R Markdown on Blog William Barbosa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="https://william-barbosa.github.io/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://william-barbosa.github.io/Blog/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello R Markdown</title>
-      <link>https://william-barbosa.github.io/post/2015-07-23-r-rmarkdown/</link>
+      <link>https://william-barbosa.github.io/Blog/post/2015-07-23-r-rmarkdown/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://william-barbosa.github.io/post/2015-07-23-r-rmarkdown/</guid>
+      <guid>https://william-barbosa.github.io/Blog/post/2015-07-23-r-rmarkdown/</guid>
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars)## speed dist ## Min. : 4.0 Min. : 2.</description>

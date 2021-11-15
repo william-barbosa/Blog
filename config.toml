@@ -42,7 +42,7 @@ publishDir = "docs/"
   author = "William Barbosa"
 
   # Description/subtitle for homepage (can be Markdown)
-  description = "Alterar aqui a descrição do Blog teste de cor."
+  description = "Alterar aqui a descrição do Blog teste de cor. Ver se deu boa!"
 
   # Show header (default: true)
   #header_visible = true

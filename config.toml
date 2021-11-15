@@ -3,7 +3,9 @@
 baseurl = "https://william-barbosa.github.io/Blog/"
 languageCode = "en-us"
 title = "Blog William Barbosa"
-theme = "hugo-theme-bootstrap4-blog"
+#theme = "hugo-theme-bootstrap4-blog"
+theme = "william-thema-novo"
+
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 8
 # number of words to use for summary on home/category/tag pages (Default: 70)
@@ -40,7 +42,7 @@ publishDir = "docs/"
   author = "William Barbosa"
 
   # Description/subtitle for homepage (can be Markdown)
-  description = "Alterar aqui a descrição do Blog."
+  description = "Alterar aqui a descrição do Blog teste de cor."
 
   # Show header (default: true)
   #header_visible = true

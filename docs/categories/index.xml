@@ -2,39 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Blog William Barbosa</title>
-    <link>https://william-barbosa.github.io/Blog/categories/</link>
+    <link>/Blog/categories/</link>
     <description>Recent content in Categories on Blog William Barbosa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
     
-	<atom:link href="https://william-barbosa.github.io/Blog/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/Blog/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>R</title>
-      <link>https://william-barbosa.github.io/Blog/categories/r/</link>
+      <link>/Blog/categories/r/</link>
       <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
       
-      <guid>https://william-barbosa.github.io/Blog/categories/r/</guid>
+      <guid>/Blog/categories/r/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Development</title>
-      <link>https://william-barbosa.github.io/Blog/categories/development/</link>
+      <link>/Blog/categories/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://william-barbosa.github.io/Blog/categories/development/</guid>
+      <guid>/Blog/categories/development/</guid>
       <description></description>
     </item>
     
     <item>
       <title>golang</title>
-      <link>https://william-barbosa.github.io/Blog/categories/golang/</link>
+      <link>/Blog/categories/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://william-barbosa.github.io/Blog/categories/golang/</guid>
+      <guid>/Blog/categories/golang/</guid>
       <description></description>
     </item>
     

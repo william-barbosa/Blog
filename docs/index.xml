@@ -6,10 +6,28 @@
     <description>Recent content on Blog William Barbosa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 23 Jul 2015 21:13:14 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Instalando o R e Rstudio</title>
+      <link>/Blog/2021/11/instalando-o-r-e-rstudio/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/Blog/2021/11/instalando-o-r-e-rstudio/</guid>
+      <description>IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.</description>
+    </item>
+    
+    <item>
+      <title>Classes e objetos</title>
+      <link>/Blog/2021/10/classes-e-objetos/</link>
+      <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/Blog/2021/10/classes-e-objetos/</guid>
+      <description>IntroduçãoMuitos usuários possuem medo ou receio ao se deparar com a necessidade de digitar comandos, tanto no terminal do R, quanto na interface gráfica do Rstudio. É possível que o usuário possua dificuldade em decorar comando, mas isso é besteira. O Rstudio já facilita um bocado ao sugerir a função quando começamos a digitar, então, quando aparecer a sugestão é só apertar a tecla tab ou enter do teclado.</description>
+    </item>
     
     <item>
       <title>Creating a New Theme</title>
@@ -17,7 +35,7 @@
       <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
       
       <guid>/Blog/2014/09/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&#39;ll explain how Hugo uses templates and how you can organize your templates to create a theme.</description>
+      <description>Introdução para ver o que dá nesse post This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&#39;ll explain how Hugo uses templates and how you can organize your templates to create a theme.</description>
     </item>
     
     <item>
@@ -28,6 +46,24 @@
       <guid>/Blog/2014/03/migrate-to-hugo-from-jekyll/</guid>
       <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become</description>
+    </item>
+    
+    <item>
+      <title>Nova postagem com Rmd</title>
+      <link>/Blog/2021/11/nova-postagem-com-rmd/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/Blog/2021/11/nova-postagem-com-rmd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Teste nova</title>
+      <link>/Blog/2021/11/teste-nova/</link>
+      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/Blog/2021/11/teste-nova/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -60,6 +96,16 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.</description>
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo
 Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.</description>
+    </item>
+    
+    <item>
+      <title>Recomendação de leitura e estudos</title>
+      <link>/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/</guid>
+      <description>Leituras indicadasEm construção …
+</description>
     </item>
     
   </channel>

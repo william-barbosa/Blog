@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/Blog/2021/11/instalando-o-r-e-rstudio/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Blog/2021/10/classes-e-objetos/</loc>
+    <lastmod>2021-10-28T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/Blog/2014/09/creating-a-new-theme/</loc>
     <lastmod>2014-09-28T00:00:00+00:00</lastmod>
   </url>
@@ -14,7 +24,22 @@
   
   <url>
     <loc>/Blog/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Blog/2021/11/nova-postagem-com-rmd/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Blog/posts/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Blog/2021/11/teste-nova/</loc>
+    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -58,11 +83,6 @@
   </url>
   
   <url>
-    <loc>/Blog/posts/</loc>
-    <lastmod>2014-09-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/Blog/2014/04/hugo-template-primer/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
@@ -88,12 +108,12 @@
   </url>
   
   <url>
-    <loc>/Blog/tags/golang/</loc>
+    <loc>/Blog/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/categories/golang/</loc>
+    <loc>/Blog/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
   </url>
   
@@ -110,6 +130,10 @@
   <url>
     <loc>/Blog/tags/themes/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/</loc>
   </url>
   
 </urlset>

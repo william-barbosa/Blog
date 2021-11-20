@@ -10,7 +10,7 @@
 <meta property="og:description" content="Alterar aqui a descrição do Blog teste de cor. Ver se deu boa!" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="/Blog/posts/" />
-<meta property="og:updated_time" content="2014-09-28T00:00:00+00:00" />
+<meta property="og:updated_time" content="2021-11-15T00:00:00+00:00" />
 
 
 
@@ -31,7 +31,7 @@
     "@type": "Person",
     "name": "William Barbosa"
   },
-  "dateModified": "2014-09-28T00:00:00+00:00",
+  "dateModified": "2021-11-15T00:00:00+00:00",
   "keywords": "development, golang, r, development, go, golang, hugo, plot, r-markdown, regression, templates, themes",
   "description":"Alterar aqui a descrição do Blog teste de cor. Ver se deu boa!"
 }
@@ -63,45 +63,93 @@
     <html lang="en">
     <head>
         <meta charset="UTF-8">
-
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <script type="text/javascript" src="js/bootstrap.js"></script>
 
 
 <style>
 
 .blog-description {
   font-size: 1.1rem;
- 
-color: red;
+  color: #999;
 }
+
+
+body {
+  font-family: "Computer Modern", sans-serif;
+  color: black;
+  background: rgb(255, 255, 255)!important;
+}
+
+.navbar{ 
+    background-color: rgb(0, 128, 0);
+}
+
+.navbar .navbar-brand{   
+    color: white!important;
+    font-family: "Computer Modern", sans-serif;
+    padding-top: 9.5px;
+}
+.navbar .container .navbar-brand:hover{  
+    color: rgb(250, 250, 250)!important;
+}
+
+
 
 
 </style>
 
 </head>
+
+
+
+<body>
+  
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+        <a class="navbar-brand h1 mb-0 " href="/Blog/">Início</a> 
+        
+        <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+       
+           <div class="collapse navbar-collapse" id="navbarSite">
+            <ul class="navbar-nav mr-auto"> 
+                
+                    
+                
+                <div class="navbar-collapse collapse navbar-expand-lg" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Blog/2014/04/hugo-template-primer/">(Hu)go Template Primer</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/Blog/2014/04/getting-started-with-hugo/">Getting Started with Hugo</a>
+                    </li>
+                        
+                    <li class="nav-item active">
+                        <a class="nav-link" href="">tutorials</a>
+                    </li>
+                        
+                    </ul>
+                </div>
+
+            </ul>
+
+    
+        </div>
+    </div>
+    </nav>  
+
+
+
+
+</body>
   </head>
 
   <body>
-
-    
-    <div class="blog-masthead">
-      <div class="container">
-        <nav class="nav blog-nav">
-          <a class="nav-link " href="/Blog/">Home</a>
-        </nav>
-      </div>
-    </div>
-    
-
-    
-    
-    <header class="blog-header">
-      <div class="container">
-        <h1 class="blog-title" dir="auto"><a href="/Blog/" rel="home">Blog William Barbosa</a></h1>
-        <p class="lead blog-description" dir="auto">Alterar aqui a descrição do Blog teste de cor. Ver se deu boa!</p>
-      </div>
-    </header>
-    
-    
 
     
     <div class="container">
@@ -118,10 +166,38 @@ color: red;
 
 <article class="blog-post">
   <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/Blog/2021/11/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-11-15T00:00:00Z">Mon Nov 15, 2021</time> by William Barbosa</p>
+  </header>
+  IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.
+  <a href='/Blog/2021/11/instalando-o-r-e-rstudio/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/Blog/2021/10/classes-e-objetos/">Classes e objetos</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-10-28T00:00:00Z">Thu Oct 28, 2021</time> by Michael Henderson</p>
+  </header>
+  IntroduçãoMuitos usuários possuem medo ou receio ao se deparar com a necessidade de digitar comandos, tanto no terminal do R, quanto na interface gráfica do Rstudio. É possível que o usuário possua dificuldade em decorar comando, mas isso é besteira. O Rstudio já facilita um bocado ao sugerir a função quando começamos a digitar, então, quando aparecer a sugestão é só apertar a tecla tab ou enter do teclado.
+  <a href='/Blog/2021/10/classes-e-objetos/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
     <h2 class="blog-post-title" dir="auto"><a href="/Blog/2014/09/creating-a-new-theme/">Creating a New Theme</a></h2>
     <p class="blog-post-meta"><time datetime="2014-09-28T00:00:00Z">Sun Sep 28, 2014</time> by Michael Henderson</p>
   </header>
-  Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I'll explain how Hugo uses templates and how you can organize your templates to create a theme.
+  Introdução para ver o que dá nesse post This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I'll explain how Hugo uses templates and how you can organize your templates to create a theme.
   <a href='/Blog/2014/09/creating-a-new-theme/'>Read more →</a>
 </article> 
 
@@ -138,6 +214,34 @@ color: red;
   Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
 ▾ &lt;root&gt;/ ▾ images/ logo.png  should become
   <a href='/Blog/2014/03/migrate-to-hugo-from-jekyll/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-11-15T00:00:00Z">Mon Nov 15, 2021</time> by William</p>
+  </header>
+  
+  <a href='/Blog/2021/11/nova-postagem-com-rmd/'>Read more →</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/Blog/2021/11/teste-nova/">Teste nova</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-11-15T00:00:00Z">Mon Nov 15, 2021</time> by William</p>
+  </header>
+  
+  <a href='/Blog/2021/11/teste-nova/'>Read more →</a>
 </article> 
 
 
@@ -187,6 +291,16 @@ Step 2. Build the Docs Hugo has its own example site which happens to also be th
 
 
 
+<nav class="blog-pagination">
+  
+  
+  
+  <a class="btn btn-outline-primary disabled" href="#" role="button" aria-disabled="true">Previous page</a>
+  <a class="btn btn-outline-primary" href="/Blog/posts/page/2/" rel="next" role="button">Next page</a>
+  
+</nav>
+
+
 
 
 
@@ -206,13 +320,15 @@ Step 2. Build the Docs Hugo has its own example site which happens to also be th
     <ol class="list-unstyled">
 
 
+<li><a href="/Blog/2021/11/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/10/classes-e-objetos/">Classes e objetos</a></li>
+
 <li><a href="/Blog/2014/09/creating-a-new-theme/">Creating a New Theme</a></li>
 
 <li><a href="/Blog/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
 
-<li><a href="/Blog/2014/04/hugo-template-primer/">(Hu)go Template Primer</a></li>
-
-<li><a href="/Blog/2014/04/getting-started-with-hugo/">Getting Started with Hugo</a></li>
+<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
 
     </ol>
   </section>

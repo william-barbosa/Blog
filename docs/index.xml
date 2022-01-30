@@ -5,7 +5,7 @@
     <link>/Blog/</link>
     <description>Recent content on Blog William Barbosa</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
+    <language>pt-br</language>
     <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Blog/index.xml" rel="self" type="application/rss+xml" />
@@ -106,6 +106,15 @@ Step 2. Build the Docs Hugo has its own example site which happens to also be th
       <guid>/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/</guid>
       <description>Leituras indicadasEm construção …
 </description>
+    </item>
+    
+    <item>
+      <title>Sobre</title>
+      <link>/Blog/perfil/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Blog/perfil/</guid>
+      <description>.col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.coluna-inteira{width: 100%;overflow:hidden;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}.</description>
     </item>
     
   </channel>

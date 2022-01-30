@@ -60,12 +60,19 @@
    
    
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       
+    
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css"/>    
 
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <style>
 
@@ -76,26 +83,115 @@
 
 
 body {
-  font-family: "Computer Modern", sans-serif;
+  font-family: 'CMUSerifRoman', 'sans-serif' !important;
   color: black;
-  background: rgb(255, 255, 255)!important;
+   background: rgb(255, 255, 255)!important;  
 }
 
+
+ 
+
+
+.container{
+    padding: 35px 0px; 
+    padding-left: 35px!important;
+    padding-right: 0%!important;
+}
+
+ 
+.sidebar-module {
+    width: 250px!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    margin-left: 95px!important;
+}
+.sidebar-module a {
+    color: blue!important;
+    text-decoration: none;
+    font-family: 'CMUSerifRoman','sans-serif'!important;
+    font-weight: normal!important;
+    font-style: normal!important;   
+}
+
+.sidebar-module a:hover{
+    color:white!important;
+    background-color:rgb(0, 128, 0)!important;
+}
+
+
+
+ 
+.blog-post {
+    width: 1020px!important;
+    margin-bottom: 4rem;
+     
+    
+}
+
+
+
+
+ 
+p, li{
+    color: black!important;
+    font-size:15px;
+}
+
+ 
 .navbar{ 
     background-color: rgb(0, 128, 0);
+    padding-left: 75px!important;
 }
+ 
 
-.navbar .navbar-brand{   
+.navbar .navbar-brand .navbar-nav{   
     color: white!important;
-    font-family: "Computer Modern", sans-serif;
-    padding-top: 9.5px;
+    font-family: 'CMUSerifRoman','sans-serif' !important;
+    font-size: 12px!important;
+   
 }
+ 
+
 .navbar .container .navbar-brand:hover{  
-    color: rgb(250, 250, 250)!important;
+    color: red!important;
+}
+.navbar .navbar-nav li a{
+    color: white!important;
+    font-family: 'CMUSerifRoman','sans-serif' !important;
+    font-size: 25px!important;
+}
+.navbar .navbar-nav li a:hover{
+    color:rgb(216, 216, 216)!important;
 }
 
 
+ 
 
+.dropdown .dropdown-menu .dropdown-item, .dropdown .dropdown-menu .dropdown-item:hover{
+    color:rgb(0, 0, 0)!important;
+}
+  
+.blog-post #teste {
+    color: blue!important;
+    text-decoration: none;
+    font-family: 'CMUSerifRoman'!important;
+    font-weight: normal!important;
+    font-style: normal!important;
+
+}
+
+ 
+.btn-outline-primary, .btn-outline-primary.disabled, .btn-outline-primary:disabled{
+    color:black!important;
+    border-color: black!important;
+    font-family: 'CMUSerifRoman'!important;
+    font-weight: normal!important;
+    font-style: normal!important;
+}
+.btn-outline-primary:hover{
+    color:white!important;
+    background-color:rgb(0, 128, 0)!important;
+}
 
 </style>
 
@@ -103,50 +199,65 @@ body {
 
 
 
+
+
 <body>
-  
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-        <a class="navbar-brand h1 mb-0 " href="/Blog/">Início</a> 
-        
-        <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
-            <span class="navbar-toggler-icon"></span> 
-        </button>
-       
-           <div class="collapse navbar-collapse" id="navbarSite">
-            <ul class="navbar-nav mr-auto"> 
-                
-                    
-                
-                <div class="navbar-collapse collapse navbar-expand-lg" id="navbarSite">
+    <header>
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+               <a class="navbar-brand" href="/Blog/">
+                <img src="/Logo1.svg" width="45px" height="45px">
+               </a>
+                <button class="navbar-toggler ml-auto navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSite">
                     <ul class="navbar-nav mr-auto">
+                    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Perfil/">Sobre</a>
+                        </li>
                         
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/Blog/2014/04/hugo-template-primer/">(Hu)go Template Primer</a>
-                    </li>
-                        
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/Blog/2014/04/getting-started-with-hugo/">Getting Started with Hugo</a>
-                    </li>
-                        
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">tutorials</a>
-                    </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/2014/04/getting-started-with-hugo/">Leituras indicadas</a>
+                        </li>
+                            
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Área para alunos</a>
+                        </li>
                         
                     </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="dropMenu" href="#" data-bs-toggle="dropdown">
+                                Links úteis
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Teste 1</a>
+                                <a class="dropdown-item" href="#">Teste 2</a>
+                                <a class="dropdown-item" href="#">Teste 3</a>
+                            </div>
+
+                        </li>
+                    </ul>
+
+       
+
                 </div>
 
-            </ul>
 
-    
+
+            </nav>
         </div>
-    </div>
-    </nav>  
-
+    </header>
 
 
 
 </body>
+
+
+
   </head>
 
   <body>
@@ -166,12 +277,73 @@ body {
 
 <article class="blog-post">
   <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/Blog/2021/11/teste-nova/">Teste nova</a></h2>
+    <p class="blog-post-meta"><time datetime="2021-11-15T00:00:00Z">Nov 15, 2021</time> by William</p>
+  </header>
+  
+ 
+<a id="teste" href='/Blog/2021/11/teste-nova/'>Leia Mais...</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/Blog/2014/04/hugo-template-primer/">(Hu)go Template Primer</a></h2>
+    <p class="blog-post-meta"><time datetime="2014-04-02T00:00:00Z">Apr 02, 2014</time> by William Barbosa in 
+<span class="fas fa-folder" aria-hidden="true"></span>&nbsp;<a href="/Blog/categories/development/" rel="category tag">Development</a>, <a href="/Blog/categories/golang/" rel="category tag">golang</a>
+
+
+<span class="fas fa-tag" aria-hidden="true"></span>&nbsp;<a href="/Blog/tags/go/" rel="tag">go</a>, <a href="/Blog/tags/golang/" rel="tag">golang</a>, <a href="/Blog/tags/templates/" rel="tag">templates</a>, <a href="/Blog/tags/themes/" rel="tag">themes</a>, <a href="/Blog/tags/development/" rel="tag">development</a>
+
+</p>
+  </header>
+  Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+ 
+<a id="teste" href='/Blog/2014/04/hugo-template-primer/'>Leia Mais...</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/Blog/2014/04/getting-started-with-hugo/">Getting Started with Hugo</a></h2>
+    <p class="blog-post-meta"><time datetime="2014-04-02T00:00:00Z">Apr 02, 2014</time> by William Barbosa in 
+<span class="fas fa-folder" aria-hidden="true"></span>&nbsp;<a href="/Blog/categories/development/" rel="category tag">Development</a>, <a href="/Blog/categories/golang/" rel="category tag">golang</a>
+
+
+<span class="fas fa-tag" aria-hidden="true"></span>&nbsp;<a href="/Blog/tags/go/" rel="tag">go</a>, <a href="/Blog/tags/golang/" rel="tag">golang</a>, <a href="/Blog/tags/hugo/" rel="tag">hugo</a>, <a href="/Blog/tags/development/" rel="tag">development</a>
+
+</p>
+  </header>
+  Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+ 
+<a id="teste" href='/Blog/2014/04/getting-started-with-hugo/'>Leia Mais...</a>
+</article> 
+
+
+
+
+
+
+<article class="blog-post">
+  <header>
     <h2 class="blog-post-title" dir="auto"><a href="/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/">Recomendação de leitura e estudos</a></h2>
-    <p class="blog-post-meta"><time datetime="0001-01-01T00:00:00Z">Mon Jan 01, 0001</time> by William Barbosa</p>
+    <p class="blog-post-meta"><time datetime="0001-01-01T00:00:00Z">Jan 01, 0001</time> by William Barbosa</p>
   </header>
   Leituras indicadasEm construção …
 
-  <a href='/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/'>Read more →</a>
+ 
+<a id="teste" href='/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/'>Leia Mais...</a>
 </article> 
 
 
@@ -181,8 +353,8 @@ body {
 <nav class="blog-pagination">
   
   
-  <a class="btn btn-outline-primary" href="/Blog/categories/" rel="prev" role="button">Previous page</a>
-  <a class="btn btn-outline-primary disabled" href="#" role="button" aria-disabled="true">Next page</a>
+  <a class="btn btn-outline-primary" href="/Blog/categories/" rel="prev" role="button">Página Anterior</a>
+  <a class="btn btn-outline-primary disabled" href="#" role="button" aria-disabled="true">Próxima Página</a>
   
   
 </nav>
@@ -195,15 +367,9 @@ body {
 
         <aside class="col-sm-3 ml-auto blog-sidebar">
   
-  <section class="sidebar-module sidebar-module-inset">
-    <h4>About</h4>
-    <p dir="auto">A simple Hugo theme based on the <a href="http://v4-alpha.getbootstrap.com/examples/blog/">Bootstrap v4 blog example</a>.</p>
-  </section>
-  
-
   
         <section class="sidebar-module">
-    <h4>Recent Posts</h4>
+    <h4>Recentes</h4>
     <ol class="list-unstyled">
 
 
@@ -220,21 +386,25 @@ body {
     </ol>
   </section>
 
+
   
 
   
   <section class="sidebar-module">
-    <h4>Links</h4>
+    <h4>Links Rápidos</h4>
     <ol class="list-unstyled">
       
       <li><a href="https://example.com">Link 1</a></li>
       
-      <li><a href="https://example.org">Link 2</a></li>
+      <li><a href="https://example.org">Teste Link 2</a></li>
       
     </ol>
   </section>
   
 </aside>
+
+
+
 
 
       </div> <!-- /.row -->

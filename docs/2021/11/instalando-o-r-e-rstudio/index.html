@@ -28,7 +28,7 @@
   "@type": "BlogPosting",
   "headline": "Instalando o R e Rstudio",
   "url": "/Blog/2021/11/instalando-o-r-e-rstudio/",
-  "wordCount": "1383",
+  "wordCount": "1413",
   "datePublished": "2021-11-15T00:00:00+00:00",
   "dateModified": "2021-11-15T00:00:00+00:00",
   "author": {
@@ -61,12 +61,19 @@
    
    
     <!DOCTYPE html>
-    <html lang="en">
+    <html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <script type="text/javascript" src="js/bootstrap.js"></script>
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       
+    
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css"/>    
 
+    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <style>
 
@@ -77,26 +84,115 @@
 
 
 body {
-  font-family: "Computer Modern", sans-serif;
+  font-family: 'CMUSerifRoman', 'sans-serif' !important;
   color: black;
-  background: rgb(255, 255, 255)!important;
+   background: rgb(255, 255, 255)!important;  
 }
 
+
+ 
+
+
+.container{
+    padding: 35px 0px; 
+    padding-left: 35px!important;
+    padding-right: 0%!important;
+}
+
+ 
+.sidebar-module {
+    width: 250px!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    margin-left: 95px!important;
+}
+.sidebar-module a {
+    color: blue!important;
+    text-decoration: none;
+    font-family: 'CMUSerifRoman','sans-serif'!important;
+    font-weight: normal!important;
+    font-style: normal!important;   
+}
+
+.sidebar-module a:hover{
+    color:white!important;
+    background-color:rgb(0, 128, 0)!important;
+}
+
+
+
+ 
+.blog-post {
+    width: 1020px!important;
+    margin-bottom: 4rem;
+     
+    
+}
+
+
+
+
+ 
+p, li{
+    color: black!important;
+    font-size:15px;
+}
+
+ 
 .navbar{ 
     background-color: rgb(0, 128, 0);
+    padding-left: 75px!important;
 }
+ 
 
-.navbar .navbar-brand{   
+.navbar .navbar-brand .navbar-nav{   
     color: white!important;
-    font-family: "Computer Modern", sans-serif;
-    padding-top: 9.5px;
+    font-family: 'CMUSerifRoman','sans-serif' !important;
+    font-size: 12px!important;
+   
 }
+ 
+
 .navbar .container .navbar-brand:hover{  
-    color: rgb(250, 250, 250)!important;
+    color: red!important;
+}
+.navbar .navbar-nav li a{
+    color: white!important;
+    font-family: 'CMUSerifRoman','sans-serif' !important;
+    font-size: 25px!important;
+}
+.navbar .navbar-nav li a:hover{
+    color:rgb(216, 216, 216)!important;
 }
 
 
+ 
 
+.dropdown .dropdown-menu .dropdown-item, .dropdown .dropdown-menu .dropdown-item:hover{
+    color:rgb(0, 0, 0)!important;
+}
+  
+.blog-post #teste {
+    color: blue!important;
+    text-decoration: none;
+    font-family: 'CMUSerifRoman'!important;
+    font-weight: normal!important;
+    font-style: normal!important;
+
+}
+
+ 
+.btn-outline-primary, .btn-outline-primary.disabled, .btn-outline-primary:disabled{
+    color:black!important;
+    border-color: black!important;
+    font-family: 'CMUSerifRoman'!important;
+    font-weight: normal!important;
+    font-style: normal!important;
+}
+.btn-outline-primary:hover{
+    color:white!important;
+    background-color:rgb(0, 128, 0)!important;
+}
 
 </style>
 
@@ -104,50 +200,65 @@ body {
 
 
 
+
+
 <body>
-  
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-        <a class="navbar-brand h1 mb-0 " href="/Blog/">Início</a> 
-        
-        <button class="navbar-toggler ml-auto navbar-light" type="button" data-toggle="collapse" data-target="#navbarSite" aria-controls="navbarToggleExternalContent" aria-expanded="false"> 
-            <span class="navbar-toggler-icon"></span> 
-        </button>
-       
-           <div class="collapse navbar-collapse" id="navbarSite">
-            <ul class="navbar-nav mr-auto"> 
-                
-                    
-                
-                <div class="navbar-collapse collapse navbar-expand-lg" id="navbarSite">
+    <header>
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+               <a class="navbar-brand" href="/Blog/">
+                <img src="/Logo1.svg" width="45px" height="45px">
+               </a>
+                <button class="navbar-toggler ml-auto navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSite">
                     <ul class="navbar-nav mr-auto">
+                    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Perfil/">Sobre</a>
+                        </li>
                         
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/Blog/2014/04/hugo-template-primer/">(Hu)go Template Primer</a>
-                    </li>
-                        
-                    <li class="nav-item active">
-                        <a class="nav-link" href="/Blog/2014/04/getting-started-with-hugo/">Getting Started with Hugo</a>
-                    </li>
-                        
-                    <li class="nav-item active">
-                        <a class="nav-link" href="">tutorials</a>
-                    </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/2014/04/getting-started-with-hugo/">Leituras indicadas</a>
+                        </li>
+                            
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Área para alunos</a>
+                        </li>
                         
                     </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="dropMenu" href="#" data-bs-toggle="dropdown">
+                                Links úteis
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Teste 1</a>
+                                <a class="dropdown-item" href="#">Teste 2</a>
+                                <a class="dropdown-item" href="#">Teste 3</a>
+                            </div>
+
+                        </li>
+                    </ul>
+
+       
+
                 </div>
 
-            </ul>
 
-    
+
+            </nav>
         </div>
-    </div>
-    </nav>  
-
+    </header>
 
 
 
 </body>
+
+
+
   </head>
 
   <body>
@@ -164,7 +275,7 @@ body {
   <header>
     <h2 class="blog-post-title" dir="auto"><a href="/Blog/2021/11/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></h2>
     <p class="blog-post-meta">
-<time datetime="2021-11-15T00:00:00Z">Mon Nov 15, 2021</time>
+<time datetime="2021-11-15T00:00:00Z">Nov 15, 2021</time>
 </p>
   </header>
   
@@ -198,24 +309,24 @@ Instalação no Windows: Passo 1
 Primeiramente devemos entrar no site do repositório do R
 <a href="https://brieger.esalq.usp.br/CRAN/" style="color:blue">clicando aqui</a>. Note que é possível baixar para Linux, Mac e Windows. Para a instalação no Windows, após clicar no link destacado em amarelo, deve-se entrar no link <span style="color:red"><b>install R for the first time</b></span> que aparecerá na próxima tela.
 </p>
-<!-- <img src='/post/baixar.png' /> -->
-<p><img src="/post/baixar.png" /></p>
+<!-- <img src='/posts/baixar.png' /> -->
+<p><img src="/posts/baixar.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-bottom: 30px;margin-top: 30px">
 Por fim, clicar em “<strong>Download R 3.6.2 for Windows</strong>” para baixar a última versão disponível até o momento.
 </p>
-<p><img src="/post/baixar1.png" /></p>
+<p><img src="/posts/baixar1.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 30px">
 Após o download do instalador, é só executá-lo e dar as devidas permissões para realizar o procedimento da instalação. Uma dica é quando aparecer a tela abaixo, modificar o diretório para uma pasta onde não necessite de permissão do administrador para futuras instalações de pacotes. Geralmente o instalador vai indicar que a pasta a ser instalada será “Program Files”, portanto, sugere-se a modificação para outra, no meu caso, indiquei a pasta “Documents”.
 </p>
-<p><img src="/post/Instalar.png" /></p>
+<p><img src="/posts/Instalar.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 30px">
 Agora o próximo passo é a instalação do Rstudio. A grosso modo, esse é um software que é uma interface gráfica para executar e criar códigos, tanto de R, como de outras linguages. Apesar de ser um software pago, existe uma versão gratuita que pode ser utilizada e atende todas as necessidade de um usuário comum ou que necessite apenas a realização de análises em seu desktop. Para isso, deve-se baixar o <strong>RStudio Desktop</strong> em sua versão FREE <a href="https://rstudio.com/products/rstudio/download/#download" style="color:blue">clicando aqui</a>.
 </p>
-<p><img src="/post/Instalar_rstudio.png" /></p>
+<p><img src="/posts/Instalar_rstudio.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
 Pronto, tudo já está instalado. Agora devemos abrir o Rstudio e ele já irá busar a instalação do R automaticamente. Ao abrirmos o programa, aperte as teclas <strong>ctrl + shift + N</strong> em conjunto, posteriormente nos deparamos com a seguinte tela:
 </p>
-<p><img src="/post/rstudio.png" /></p>
+<p><img src="/posts/rstudio.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
 Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A <strong>primeira</strong> é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nesse campo). A <strong>segunda</strong> área é onde se localiza o <em>rscript</em> (ou rotina) que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo em uma pasta externa no PC e possuirá a extensão <strong>.R</strong>. A <strong>terceira</strong> concentra algumas abas muito importantes: <em>package</em> que é onde podemos realizar a instalação manualmente de pacotes, o <em>plots</em> que auxilia na visualização de resultados gráficos e o <em>help</em>, fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a <strong>quarta</strong> área é o <em>environment</em> ou podemos chamar de <em>workspace</em> concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções.
 </p>
@@ -229,10 +340,17 @@ A primeira coisa que devemos aprender é que com o R podemos realizar a mesma ta
 A segunda maneira é instalar via linha de comando. Essa maneira é bem mais rápida e menos tediosa do que ter que usar o mouse para abrir a janela para instalação. Por exemp, supondo que vamos instalar o pacote <strong>MASS</strong>:
 </p>
 <pre class="r bordepre"><code>install.packages(&#39;MASS&#39;)</code></pre>
-<pre class="bordepos"><code>## package &#39;MASS&#39; successfully unpacked and MD5 sums checked
+<pre class="bordepos"><code>## 
+##   There is a binary version available but the source version is
+##   later:
+##      binary source needs_compilation
+## MASS 7.3-54 7.3-55              TRUE
+## 
+##   Binaries will be installed
+## package &#39;MASS&#39; successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-##  C:\Users\William\AppData\Local\Temp\RtmpmC5j91\downloaded_packages</code></pre>
+##  C:\Users\William\AppData\Local\Temp\RtmpOCJafY\downloaded_packages</code></pre>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
 Podemos iniciar com um importante esclarecimento: tudo que estiver após um <strong>#</strong> será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar breves explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois anos. Qual seria a chance de lembrar da rotina inteira? Então, aquele comentário poderá lhe ajudar a lembrar do motivo para tal procedimento. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos como a função <strong>print</strong>:
 </p>
@@ -335,15 +453,9 @@ No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalm
 
         <aside class="col-sm-3 ml-auto blog-sidebar">
   
-  <section class="sidebar-module sidebar-module-inset">
-    <h4>About</h4>
-    <p dir="auto">A simple Hugo theme based on the <a href="http://v4-alpha.getbootstrap.com/examples/blog/">Bootstrap v4 blog example</a>.</p>
-  </section>
-  
-
   
         <section class="sidebar-module">
-    <h4>Recent Posts</h4>
+    <h4>Recentes</h4>
     <ol class="list-unstyled">
 
 
@@ -360,21 +472,25 @@ No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalm
     </ol>
   </section>
 
+
   
 
   
   <section class="sidebar-module">
-    <h4>Links</h4>
+    <h4>Links Rápidos</h4>
     <ol class="list-unstyled">
       
       <li><a href="https://example.com">Link 1</a></li>
       
-      <li><a href="https://example.org">Link 2</a></li>
+      <li><a href="https://example.org">Teste Link 2</a></li>
       
     </ol>
   </section>
   
 </aside>
+
+
+
 
 
       </div> <!-- /.row -->

@@ -37,32 +37,32 @@ Apresentar uma breve introdução à linguagem R e sua instalação. Para otimiz
 Primeiramente devemos entrar no site do repositório do R
  <a href="https://brieger.esalq.usp.br/CRAN/" style="color:blue">clicando aqui</a>. Note que é possível baixar para Linux, Mac e Windows. Para a instalação no Windows, após clicar no link destacado em amarelo, deve-se entrar no link  <span style="color:red"><b>install R for the first time</b></span> que aparecerá na próxima tela.
 </p>
-<!-- <img src='/post/baixar.png' /> -->
+<!-- <img src='/posts/baixar.png' /> -->
 
- ![](/post/baixar.png)
+ ![](/posts/baixar.png)
  
 <p style="color:black; font-family:sans-serif;margin-bottom: 30px;margin-top: 30px">
 Por fim, clicar em "**Download R 3.6.2 for Windows**" para baixar a última versão disponível até o momento. 
 </p>
  
- ![](/post/baixar1.png)
+ ![](/posts/baixar1.png)
  
  <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 30px">
 Após o download do instalador, é só executá-lo e dar as devidas permissões para realizar o procedimento da instalação. Uma dica é quando aparecer a tela abaixo, modificar o diretório para uma pasta onde não necessite de permissão do administrador para futuras instalações de pacotes. Geralmente o instalador vai indicar que a pasta a ser instalada será "Program Files", portanto, sugere-se a modificação para outra, no meu caso, indiquei a pasta "Documents".
 </p>
-![](/post/Instalar.png)
+![](/posts/Instalar.png)
 
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 30px">
 Agora o próximo passo é a instalação do Rstudio. A grosso modo, esse é um software que é uma interface gráfica para executar e criar códigos, tanto de R, como de outras linguages. Apesar de ser um software pago, existe uma versão gratuita que pode ser utilizada e atende todas as necessidade de um usuário comum ou que necessite apenas a realização de análises em seu desktop. Para isso, deve-se baixar o **RStudio Desktop** em sua versão FREE <a href="https://rstudio.com/products/rstudio/download/#download" style="color:blue">clicando aqui</a>.
 </p>
 
-![](/post/Instalar_rstudio.png) 
+![](/posts/Instalar_rstudio.png) 
 
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
 Pronto, tudo já está instalado. Agora devemos abrir o Rstudio e ele já irá busar a instalação do R automaticamente. Ao abrirmos o programa, aperte as teclas **ctrl + shift + N** em conjunto, posteriormente nos deparamos com a seguinte tela:
 </p>
 
-![](/post/rstudio.png) 
+![](/posts/rstudio.png) 
 
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
 Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A **primeira** é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nesse campo). A **segunda** área é onde se localiza o _rscript_ (ou rotina) que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo em uma pasta externa no PC e possuirá a extensão **.R**. A **terceira** concentra algumas abas muito importantes: _package_ que é onde podemos realizar a instalação manualmente de pacotes, o _plots_ que auxilia na visualização de resultados gráficos e o _help_, fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a **quarta** área é o _environment_ ou podemos chamar de _workspace_ concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções. 

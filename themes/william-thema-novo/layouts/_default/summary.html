@@ -6,7 +6,8 @@
     <p class="blog-post-meta"><time {{ .Date.Format "2006-01-02T15:04:05Z07:00" | printf "datetime=%q" | safeHTMLAttr }}>{{ .Date.Format $dateFormat }}</time> {{ i18n "authoredBy" }} {{ .Params.author | default .Site.Params.author }}{{ if or (.Params.categories) (.Params.tags) }} {{ i18n "postedIn" }} {{ partial "meta-terms.html" . }}{{ end }}</p>
   </header>
   {{ .Summary }}
-  <a href='{{ .Permalink }}'>{{ i18n "readMore" }}</a>
+<!-- <a href='{{ .Permalink }}'>{{ i18n "readMore" }}</a>--> 
+<a id="teste" href='{{ .Permalink }}'>{{"Leia Mais..." }}</a>
 </article> <!-- /.blog-post -->
 
 {{- /* vim: set ts=2 sw=2 et: */}}

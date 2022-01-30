@@ -1,13 +1,13 @@
 # Hugo variables
 #
 baseurl = "https://william-barbosa.github.io/Blog/"
-languageCode = "en-us"
+languageCode = "pt-br"
 title = "Blog William Barbosa"
 #theme = "hugo-theme-bootstrap4-blog"
 theme = "william-thema-novo"
 
 # number of posts to show on home/category/tag pages (Default: 10)
-paginate = 8
+paginate = 5
 # number of words to use for summary on home/category/tag pages (Default: 70)
 summaryLength = 50
 # optionally override the site's footer with custom copyright text
@@ -27,7 +27,7 @@ publishDir = "docs/"
   url = "https://example.com"
 
 [[menu.sidebar]]
-  name = "Link 2"
+  name = "Teste Link 2"
   url = "https://example.org"
 
 #[[menu.navbar]]
@@ -48,7 +48,7 @@ publishDir = "docs/"
   #header_visible = true
 
   # Format dates with Go's time formatting
-  date_format = "Mon Jan 02, 2006"
+  date_format = "Jan 02, 2006"
 
   # verification string for Google Webmaster Tools
   #google_verify_meta = "BAi57DROASu4b2mkVNA_EyUsobfA7Mq8BmSg7Rn-Zp9"
@@ -78,7 +78,7 @@ publishDir = "docs/"
 
   [params.sidebar]
     # Optional about block for sidebar (can be Markdown)
-    about = "A simple Hugo theme based on the [Bootstrap v4 blog example](http://v4-alpha.getbootstrap.com/examples/blog/)."
+    about = "Teste [Apagar aqui](http://v4-alpha.getbootstrap.com/examples/blog/)."
 
     # How many posts to show on the sidebar (Default: 5)
     #num_recent_posts = 2
@@ -91,7 +91,7 @@ publishDir = "docs/"
 
 # Default content language for Hugo 0.17's multilingual support (default is "en")
 # See: https://github.com/spf13/hugo/blob/master/docs/content/content/multilingual.md
-#DefaultContentLanguage = "en"
+DefaultContentLanguage = "pt-br"
 
 # Languages to render
 #[languages.en]

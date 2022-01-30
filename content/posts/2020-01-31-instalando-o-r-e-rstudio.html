@@ -35,24 +35,24 @@ Instalação no Windows: Passo 1
 Primeiramente devemos entrar no site do repositório do R
 <a href="https://brieger.esalq.usp.br/CRAN/" style="color:blue">clicando aqui</a>. Note que é possível baixar para Linux, Mac e Windows. Para a instalação no Windows, após clicar no link destacado em amarelo, deve-se entrar no link <span style="color:red"><b>install R for the first time</b></span> que aparecerá na próxima tela.
 </p>
-<!-- <img src='/post/baixar.png' /> -->
-<p><img src="/post/baixar.png" /></p>
+<!-- <img src='/posts/baixar.png' /> -->
+<p><img src="/posts/baixar.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-bottom: 30px;margin-top: 30px">
 Por fim, clicar em “<strong>Download R 3.6.2 for Windows</strong>” para baixar a última versão disponível até o momento.
 </p>
-<p><img src="/post/baixar1.png" /></p>
+<p><img src="/posts/baixar1.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 30px">
 Após o download do instalador, é só executá-lo e dar as devidas permissões para realizar o procedimento da instalação. Uma dica é quando aparecer a tela abaixo, modificar o diretório para uma pasta onde não necessite de permissão do administrador para futuras instalações de pacotes. Geralmente o instalador vai indicar que a pasta a ser instalada será “Program Files”, portanto, sugere-se a modificação para outra, no meu caso, indiquei a pasta “Documents”.
 </p>
-<p><img src="/post/Instalar.png" /></p>
+<p><img src="/posts/Instalar.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 30px">
 Agora o próximo passo é a instalação do Rstudio. A grosso modo, esse é um software que é uma interface gráfica para executar e criar códigos, tanto de R, como de outras linguages. Apesar de ser um software pago, existe uma versão gratuita que pode ser utilizada e atende todas as necessidade de um usuário comum ou que necessite apenas a realização de análises em seu desktop. Para isso, deve-se baixar o <strong>RStudio Desktop</strong> em sua versão FREE <a href="https://rstudio.com/products/rstudio/download/#download" style="color:blue">clicando aqui</a>.
 </p>
-<p><img src="/post/Instalar_rstudio.png" /></p>
+<p><img src="/posts/Instalar_rstudio.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
 Pronto, tudo já está instalado. Agora devemos abrir o Rstudio e ele já irá busar a instalação do R automaticamente. Ao abrirmos o programa, aperte as teclas <strong>ctrl + shift + N</strong> em conjunto, posteriormente nos deparamos com a seguinte tela:
 </p>
-<p><img src="/post/rstudio.png" /></p>
+<p><img src="/posts/rstudio.png" /></p>
 <p style="color:black; font-family:sans-serif;margin-top: 30px;margin-bottom: 5px">
 Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A <strong>primeira</strong> é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nesse campo). A <strong>segunda</strong> área é onde se localiza o <em>rscript</em> (ou rotina) que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo em uma pasta externa no PC e possuirá a extensão <strong>.R</strong>. A <strong>terceira</strong> concentra algumas abas muito importantes: <em>package</em> que é onde podemos realizar a instalação manualmente de pacotes, o <em>plots</em> que auxilia na visualização de resultados gráficos e o <em>help</em>, fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a <strong>quarta</strong> área é o <em>environment</em> ou podemos chamar de <em>workspace</em> concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções.
 </p>
@@ -66,10 +66,17 @@ A primeira coisa que devemos aprender é que com o R podemos realizar a mesma ta
 A segunda maneira é instalar via linha de comando. Essa maneira é bem mais rápida e menos tediosa do que ter que usar o mouse para abrir a janela para instalação. Por exemp, supondo que vamos instalar o pacote <strong>MASS</strong>:
 </p>
 <pre class="r bordepre"><code>install.packages(&#39;MASS&#39;)</code></pre>
-<pre class="bordepos"><code>## package &#39;MASS&#39; successfully unpacked and MD5 sums checked
+<pre class="bordepos"><code>## 
+##   There is a binary version available but the source version is
+##   later:
+##      binary source needs_compilation
+## MASS 7.3-54 7.3-55              TRUE
+## 
+##   Binaries will be installed
+## package &#39;MASS&#39; successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-##  C:\Users\William\AppData\Local\Temp\RtmpmC5j91\downloaded_packages</code></pre>
+##  C:\Users\William\AppData\Local\Temp\RtmpOCJafY\downloaded_packages</code></pre>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
 Podemos iniciar com um importante esclarecimento: tudo que estiver após um <strong>#</strong> será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar breves explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois anos. Qual seria a chance de lembrar da rotina inteira? Então, aquele comentário poderá lhe ajudar a lembrar do motivo para tal procedimento. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos como a função <strong>print</strong>:
 </p>

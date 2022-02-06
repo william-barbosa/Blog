@@ -131,8 +131,16 @@ body {
 
 
  
+.blog-post {
  
+    margin-bottom: 4rem;    
+    color: black!important;
+}
 
+.blog-post-title{
+    color:black!important;
+    font-size:36px;
+}
 
 
  
@@ -143,15 +151,16 @@ p, li{
 
  
 .navbar{ 
-    background-color: rgb(0, 128, 0);
-    padding-left: 75px!important;
+     
+    background-color: rgb(58, 58, 58)!important;
+    padding-left: 50px!important;  
 }
  
 
 .navbar .navbar-brand .navbar-nav{   
     color: white!important;
     font-family: 'CMUSerifRoman','sans-serif' !important;
-    font-size: 12px!important;
+    font-size: 20px!important;
    
 }
  
@@ -164,7 +173,7 @@ p, li{
 .navbar .navbar-nav li a{
     color: white!important;
     font-family: 'CMUSerifRoman','sans-serif' !important;
-    font-size: 25px!important;
+    font-size: 22px!important;
 }
 .navbar .navbar-nav li a:hover{
     color:rgb(216, 216, 216)!important;
@@ -205,20 +214,22 @@ p, li{
 
 
 
-
-
 <body>
     <header>
         <div class="container" id="navbar-container">
             <nav class="navbar navbar-expand-lg fixed-top">
                <a class="navbar-brand h1 mb-0" href="/Blog/">
-                <img src="/Blog/gerais_site/Logo1.svg" width="45px" height="45px">
+                <img src="/Blog/gerais_site/Imagem1.svg" width="60px" height="60px">
                </a>
                 <button class="navbar-toggler ml-auto navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false"> 
                     <span class="navbar-toggler-icon"></span> 
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSite">
                     <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/">Home</a>
+                        </li>
                     
                         <li class="nav-item active">
                             <a class="nav-link" href="/Blog/Perfil/">Sobre</a>
@@ -355,7 +366,7 @@ A segunda maneira é instalar via linha de comando. Essa maneira é bem mais rá
 ## package &#39;MASS&#39; successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-##  C:\Users\William\AppData\Local\Temp\Rtmpy0gmna\downloaded_packages</code></pre>
+##  C:\Users\William\AppData\Local\Temp\RtmpIdcXNr\downloaded_packages</code></pre>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
 Podemos iniciar com um importante esclarecimento: tudo que estiver após um <strong>#</strong> será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar breves explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois anos. Qual seria a chance de lembrar da rotina inteira? Então, aquele comentário poderá lhe ajudar a lembrar do motivo para tal procedimento. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos como a função <strong>print</strong>:
 </p>

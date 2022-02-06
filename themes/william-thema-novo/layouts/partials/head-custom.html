@@ -76,12 +76,16 @@ body {
 
 
 /* Alterando as margens da postagem na página inicial*/
-/*.blog-post {
-    width: 1020px!important;
+.blog-post {
+/*     width: 1020px!important; */
     margin-bottom: 4rem;    
+    color: black!important;
 }
-*/
 
+.blog-post-title{
+    color:black!important;
+    font-size:36px;
+}
 
 
 /*Definindo cores dos parágrafos e dos li's*/
@@ -92,8 +96,9 @@ p, li{
 
 /* Barra de Navegação */
 .navbar{/* Altera cor do navbar rgb(0, 128, 0) */
-    background-color: rgb(0, 128, 0);
-    padding-left: 75px!important;
+    /* background-color: rgb(0, 128, 0); */
+    background-color: rgb(58, 58, 58)!important;
+    padding-left: 50px!important; /* 75px*/
 }
 /*
 .nav-container{
@@ -105,7 +110,7 @@ p, li{
 .navbar .navbar-brand .navbar-nav{  /* Cor do botão principal */
     color: white!important;
     font-family: 'CMUSerifRoman','sans-serif' !important;
-    font-size: 12px!important;
+    font-size: 20px!important;
   /*  padding-top: 50px!important;
     padding-left: 55px!important;*/
 }
@@ -125,7 +130,7 @@ p, li{
 .navbar .navbar-nav li a{
     color: white!important;
     font-family: 'CMUSerifRoman','sans-serif' !important;
-    font-size: 25px!important;
+    font-size: 22px!important;
 }
 .navbar .navbar-nav li a:hover{
     color:rgb(216, 216, 216)!important;
@@ -171,20 +176,22 @@ p, li{
 
 <!-- Começando a alteração do navbar  -->
 
-
-
 <body>
     <header>
         <div class="container" id="navbar-container">
             <nav class="navbar navbar-expand-lg fixed-top">
                <a class="navbar-brand h1 mb-0" href="/Blog/">
-                <img src="/Blog/gerais_site/Logo1.svg" width="45px" height="45px">
+                <img src="/Blog/gerais_site/Imagem1.svg" width="60px" height="60px">
                </a>
                 <button class="navbar-toggler ml-auto navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false"> 
                     <span class="navbar-toggler-icon"></span> <!-- Especificando o tipo do ícone -->
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSite">
                     <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/">Home</a>
+                        </li>
                     
                         <li class="nav-item active">
                             <a class="nav-link" href="/Blog/Perfil/">Sobre</a>

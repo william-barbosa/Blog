@@ -115,8 +115,12 @@ body {
     margin-left: 0!important; 
     margin-right: 0!important;
     width: 300px!important;
-    border: 1px solid red!important;  
-
+    border: 1px solid rgb(255, 255, 255)!important;  
+    border-radius: 5px;
+}
+#LinkSide{ 
+    border: 1px solid rgb(255, 255, 255)!important;
+    margin-top: 30px!important;
 }
 .sidebar-module a {
     color: blue!important;
@@ -134,9 +138,11 @@ body {
   
 .container .blog-post{
  
-    border: 1px solid blue!important;
+    border-top: 1px solid #ccc!important;
     margin-right: 0!important;
     width: 800px!important;
+     
+   
   
 }
 
@@ -221,11 +227,6 @@ p, li{
     font-style: normal!important;
 }
 
-
-
-
-
-
  
 .btn-outline-primary, .btn-outline-primary.disabled, .btn-outline-primary:disabled{
     color:black!important;
@@ -237,6 +238,29 @@ p, li{
 .btn-outline-primary:hover{
     color:white!important;
     background-color:rgb(0, 128, 0)!important;
+}
+
+ 
+.hero-body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    }
+ 
+.hero.is-info {
+    background-color: white!important;
+}
+    
+.hero .container .h2{
+    background-color: red;
+    font-family:   sans-serif!important;
+}
+ 
+
+.hero.is-info .title{
+    color: rgb(228, 15, 15);
+    font-family: "Lucinda Grande";
+   
 }
 
 </style>
@@ -303,7 +327,7 @@ p, li{
     <section class="hero is-info is-medium">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="text is-size-4">Autor: William Barbosa</h2>
+                <h2 class="col-sm-6 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
             </div>
 
         </div>
@@ -627,7 +651,7 @@ so, such as in this example:</p>
   
 
   
-  <section class="sidebar-module">
+  <section class="sidebar-module" id="LinkSide">
     <h4>Links Rápidos</h4>
     <ol class="list-unstyled">
       

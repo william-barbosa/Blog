@@ -55,8 +55,12 @@ body {
     margin-left: 0!important;/**/
     margin-right: 0!important;
     width: 300px!important;
-    border: 1px solid red!important; /* aqui insere as bordas */
-
+    border: 1px solid rgb(255, 255, 255)!important; /* aqui insere as bordas */
+    border-radius: 5px;
+}
+#LinkSide{/* Parte de baixo do Sidebar dos Links*/
+    border: 1px solid rgb(255, 255, 255)!important;
+    margin-top: 30px!important;
 }
 .sidebar-module a {
     color: blue!important;
@@ -74,9 +78,11 @@ body {
 /* Altera o container (resumo das postagens) */ 
 .container .blog-post{
 /*    background-color: red!important;*/
-    border: 1px solid blue!important;
+    border-top: 1px solid #ccc!important;
     margin-right: 0!important;
     width: 800px!important;
+    /*background: #333;*/
+   
   
 }
 
@@ -178,11 +184,6 @@ p, li{
     font-style: normal!important;
 }
 
-
-
-
-
-
 /* Alterar o botão de próxima página*/
 .btn-outline-primary, .btn-outline-primary.disabled, .btn-outline-primary:disabled{
     color:black!important;
@@ -194,6 +195,29 @@ p, li{
 .btn-outline-primary:hover{
     color:white!important;
     background-color:rgb(0, 128, 0)!important;
+}
+
+/********* Altera o hero ********/
+.hero-body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    }
+/* Alterando o backgroundo do heros*/
+.hero.is-info {
+    background-color: white!important;
+}
+    
+.hero .container .h2{
+    background-color: red;
+    font-family:   sans-serif!important;
+}
+/* 'Lucida Sans','Lucida Sans Regular',*/
+
+.hero.is-info .title{
+    color: rgb(228, 15, 15);
+    font-family: "Lucinda Grande";
+   
 }
 
 </style>
@@ -260,7 +284,7 @@ p, li{
     <section class="hero is-info is-medium">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="text is-size-4">Autor: William Barbosa</h2>
+                <h2 class="col-sm-6 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
             </div>
 
         </div>

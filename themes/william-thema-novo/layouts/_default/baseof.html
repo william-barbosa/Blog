@@ -85,15 +85,29 @@
 
     {{ block "footer" . }}
     <footer class="blog-footer">
-      <p dir="auto">
+   <!--   <p dir="auto"  id="CriadoBy">
       {{ if .Site.Copyright }}
       {{ .Site.Copyright | markdownify }}
       {{ else }}
-      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      Created by <a href="https://www.linkedin.com/in/william-barbosa-796309179/">William Barbosa</a>
       {{ end }}
       </p>
+-->
+<p id="testeP">
+ <!-- <span class="icon is-small"><a href="http://lattes.cnpq.br/9370334825334170" class="mysocial" rel="me"><i class="fab fa-youtube fa-2x"></i></a></span>&nbsp;&nbsp; -->
+  <span class="icon is-small"><a href="http://lattes.cnpq.br/9370334825334170" class="mysocial" rel="me"><i class="ai ai-lattes-square ai-2x"></i></a></span>&nbsp;&nbsp;
+  <span class="icon is-small"><a href="https://orcid.org/0000-0002-2150-9282" class="mysocial" rel="me"><i class="ai ai-orcid-square ai-2x"></i></a></span>&nbsp;&nbsp;
+  <span class="icon is-small"><a href="https://linkedin.com/in/william-barbosa-796309179/" class="mysocial" rel="me"><i class="fab fa-linkedin fa-2x"></i></a></span>&nbsp;&nbsp;
+  <span class="icon is-small"><a href="https://github.com/william-barbosa" class="mysocial" rel="me"><i class="fab fa-github fa-2x"></i></a></span>&nbsp;&nbsp;
+  <span class="icon is-small"><a href="https://www.facebook.com/william.barbosapg" class="mysocial" rel="me"><i class="fab fa-facebook fa-2x"></i></a></span>&nbsp;&nbsp;
+  <br><br>
+  Copyright &copy; {{ .Site.Title }} {{ now.Format "2006"}} - Criado por <a href="https://linkedin.com/in/william-barbosa-796309179" class="mysocial">William Barbosa</a>
+ <!--   - <a class="mysocial" href="{{ "about" | absURL }}">Sobre</a> -->
+</p>
+
+
       <p>
-      <a href="#">{{ i18n "backToTop" }}</a>
+      <a href="#">{{"Voltar ao Topo" }}</a>
       </p>
     </footer>
     {{ end }}

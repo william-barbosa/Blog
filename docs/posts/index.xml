@@ -12,15 +12,6 @@
     
     
     <item>
-      <title>Instalando o R e Rstudio</title>
-      <link>/Blog/2021/11/instalando-o-r-e-rstudio/</link>
-      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/Blog/2021/11/instalando-o-r-e-rstudio/</guid>
-      <description>IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.R é uma linguagem de programação muito utilizada no Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica.</description>
-    </item>
-    
-    <item>
       <title>Classes e objetos</title>
       <link>/Blog/2021/10/classes-e-objetos/</link>
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
@@ -30,40 +21,12 @@
     </item>
     
     <item>
-      <title>Atualização: Instalação R e Rstudio</title>
-      <link>/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/</link>
+      <title>Instalação R e Rstudio</title>
+      <link>/Blog/2022/02/instala%C3%A7%C3%A3o-r-e-rstudio/</link>
       <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/</guid>
+      <guid>/Blog/2022/02/instala%C3%A7%C3%A3o-r-e-rstudio/</guid>
       <description>IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas. Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog.</description>
-    </item>
-    
-    <item>
-      <title>Nova postagem com Rmd</title>
-      <link>/Blog/2021/11/nova-postagem-com-rmd/</link>
-      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/Blog/2021/11/nova-postagem-com-rmd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Recomendação de leitura e estudos</title>
-      <link>/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/</guid>
-      <description>Leituras indicadasEm construção …
-</description>
-    </item>
-    
-    <item>
-      <title>Sobre</title>
-      <link>/Blog/1/01/sobre/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/Blog/1/01/sobre/</guid>
-      <description>.col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.coluna-inteira{width: 100%;overflow:hidden;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}.column-right{float: right;width: 20%;text-align: right;margin-top: 25px;}.comment{background-color: #DBDBDB;padding: 10px;border: 1px solid black;margin-left: 20px;border-radius: 5px;font-style: italic;}.linha-divisoria {border: 0;height: 1px;background: #333;background-image: linear-gradient(to right, #ccc, #333, #ccc);}Nome: William Barbosa</description>
     </item>
     
   </channel>

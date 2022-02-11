@@ -3,18 +3,8 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/Blog/2021/11/instalando-o-r-e-rstudio/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/Blog/2021/10/classes-e-objetos/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -33,13 +23,13 @@
   </url>
   
   <url>
-    <loc>/Blog/posts/</loc>
+    <loc>/Blog/2022/02/instala%C3%A7%C3%A3o-r-e-rstudio/</loc>
     <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/2021/11/nova-postagem-com-rmd/</loc>
-    <lastmod>2021-11-15T00:00:00+00:00</lastmod>
+    <loc>/Blog/posts/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -78,15 +68,7 @@
   </url>
   
   <url>
-    <loc>/Blog/1/01/recomenda%C3%A7%C3%A3o-de-leitura-e-estudos/</loc>
-  </url>
-  
-  <url>
     <loc>/Blog/perfil/</loc>
-  </url>
-  
-  <url>
-    <loc>/Blog/1/01/sobre/</loc>
   </url>
   
 </urlset>

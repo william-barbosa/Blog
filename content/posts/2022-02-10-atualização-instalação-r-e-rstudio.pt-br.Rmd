@@ -1,5 +1,5 @@
 ---
-title: 'Atualização: Instalação R e Rstudio'
+title: 'Instalação R e Rstudio'
 author: 'William Barbosa'
 date: '2022-02-10'
 slug: atualização-instalação-r-e-rstudio.pt-br
@@ -96,12 +96,12 @@ h1 {
 }
 h2 { 
     font-size: 22px;
-  color: DarkBlue;
+  color: black!important;
 }
 h3 {
   font-size: 18px;
   font-family: "Times New Roman", Times, serif;
-  color: DarkBlue;
+  color: black!important;
 }
 code.r{ 
     font-size: 12px;

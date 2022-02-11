@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<meta property="og:title" content="Migrate to Hugo from Jekyll" />
+<meta property="og:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&#39;ll want any files that should reside at the root (such as CNAME) to be moved to static." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/Blog/2014/03/migrate-from-jekyll/" />
+<meta property="article:published_time" content="2014-03-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2014-03-10T00:00:00+00:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Migrate to Hugo from Jekyll"/>
+<meta name="twitter:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&#39;ll want any files that should reside at the root (such as CNAME) to be moved to static."/>
+<meta name="generator" content="Hugo 0.62.2" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Migrate to Hugo from Jekyll",
+  "url": "/Blog/2014/03/migrate-from-jekyll/",
+  "wordCount": "813",
+  "datePublished": "2014-03-10T00:00:00+00:00",
+  "dateModified": "2014-03-10T00:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "William Barbosa"
+  }
+}
+</script>
+
+
+
+    <link rel="canonical" href="/Blog/2014/03/migrate-from-jekyll/">
+
+    <title>Migrate to Hugo from Jekyll | Blog William Barbosa</title>
+
+    
+    <!-- combined, minified CSS -->
+    
+    <link href="/Blog/css/style.beb8012edc08ba10be012f079d618dc243812267efe62e11f22fe49618f976a4.css" rel="stylesheet" integrity="sha256-vrgBLtwIuhC&#43;AS8HnWGNwkOBImfv5i4R8i/klhj5dqQ=" crossorigin="anonymous">
+    
+
+    <!-- minified Font Awesome for SVG icons -->
+    
+    <script defer src="/Blog/js/fontawesome.min.f5072c55a0721857184db93a50561d7dc13975b4de2e19db7f81eb5f3fa57270.js" integrity="sha256-9QcsVaByGFcYTbk6UFYdfcE5dbTeLhnbf4HrXz&#43;lcnA=" crossorigin="anonymous"></script>
+
+    <!-- RSS 2.0 feed -->
+    
+
+    
+   
+   
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blog William Barbosa  | Migrate to Hugo from Jekyll</title>
+
+        <script
+      src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="  crossorigin="anonymous"></script>
+
+
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+     
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css"/>    
+
+<style>
+ 
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+body {
+  font-family: 'CMUSerifRoman', 'sans-serif' !important;
+  color: black;
+   background: rgb(255, 255, 255)!important;  
+}
+
+
+.container{
+    padding: 35px 0px; 
+    padding-left: 35px!important;
+    padding-right: 0%!important;
+}
+
+ 
+.sidebar-module {
+     
+    max-width: 20rem!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    margin-left: 0!important; 
+    margin-right: 0!important;
+    width: 300px!important;
+    border: 1px solid rgb(255, 255, 255)!important;  
+    border-radius: 5px;
+}
+#LinkSide{ 
+    border: 1px solid rgb(255, 255, 255)!important;
+    margin-top: 30px!important;
+}
+.sidebar-module a {
+    color: blue!important;
+    text-decoration: none;
+    font-family: 'CMUSerifRoman','sans-serif'!important;
+    font-weight: normal!important;
+    font-style: normal!important;   
+}
+
+.sidebar-module a:hover{
+    color:white!important;
+    background-color:rgb(0, 128, 0)!important;
+}
+
+  
+.container .blog-post{
+ 
+    border-top: 1px solid #ccc!important;
+    margin-right: 0!important;
+    width: 800px!important;
+     
+   
+  
+}
+
+
+ 
+p, li{
+    color: black!important;
+    font-size:15px!important;
+}
+
+ 
+.navbar{ 
+     
+    background-color: rgb(58, 58, 58)!important;
+    padding-left: 50px!important;  
+}
+ 
+
+.navbar .navbar-brand .navbar-nav{   
+    color: white!important;
+    font-family: 'CMUSerifRoman','sans-serif' !important;
+    font-size: 20px!important;
+   
+}
+ 
+.container{
+    width: 100%;
+}
+.navbar .container .navbar-brand:hover{  
+    color: red!important;
+}
+.navbar .navbar-nav li a{
+    color: white!important;
+    font-family: 'CMUSerifRoman','sans-serif' !important;
+    font-size: 22px!important;
+}
+.navbar .navbar-nav li a:hover{
+    color:rgb(216, 216, 216)!important;
+}
+
+
+ 
+
+.dropdown .dropdown-menu .dropdown-item, .dropdown .dropdown-menu .dropdown-item:hover{
+    color:rgb(0, 0, 0)!important;
+}
+
+
+
+
+ 
+.blog-post {
+ 
+    margin-bottom: 4rem;    
+    color: black!important;
+}
+
+.blog-post-title{
+    color:black!important;
+    font-size:36px;
+}
+
+
+ 
+.blog-post #teste {
+    color: blue!important;
+    text-decoration: none;
+    font-family: 'CMUSerifRoman'!important;
+    font-weight: normal!important;
+    font-style: normal!important;
+}
+
+ 
+.btn-outline-primary, .btn-outline-primary.disabled, .btn-outline-primary:disabled{
+    color:black!important;
+    border-color: black!important;
+    font-family: 'CMUSerifRoman'!important;
+    font-weight: normal!important;
+    font-style: normal!important;
+}
+.btn-outline-primary:hover{
+    color:white!important;
+    background-color:rgb(0, 128, 0)!important;
+}
+
+ 
+.hero-body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    }
+ 
+.hero.is-info {
+    background-color: white!important;
+}
+    
+.hero .container .h2{
+    background-color: red;
+    font-family:   sans-serif!important;
+}
+ 
+ 
+
+</style>
+
+</head>
+
+
+
+<body>
+    <header>
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+               <a class="navbar-brand h1 mb-0" href="/Blog/">
+                <img src="/Blog/gerais_site/Imagem1.svg" width="60px" height="60px">
+               </a>
+                <button class="navbar-toggler ml-auto navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/">Home</a>
+                        </li>
+                    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/Perfil/">Sobre</a>
+                        </li>
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/2014/04/getting-started-with-hugo/">Leituras indicadas</a>
+                        </li>
+                            
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Área para alunos</a>
+                        </li>
+                        
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="dropMenu" href="#" data-bs-toggle="dropdown">
+                                Links úteis
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Teste 1</a>
+                                <a class="dropdown-item" href="#">Teste 2</a>
+                                <a class="dropdown-item" href="#">Teste 3</a>
+                            </div>
+
+                        </li>
+                    </ul>
+
+       
+
+                </div>
+
+
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero is-info is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="col-sm-7 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/Blog/2014/03/migrate-from-jekyll/">Migrate to Hugo from Jekyll</a></h2>
+    <p class="blog-post-meta">
+<time datetime="2014-03-10T00:00:00Z">Mar 10, 2014</time>
+</p>
+  </header>
+  <h2 id="move-static-content-to-static">Move static content to <code>static</code></h2>
+<p>Jekyll has a rule that any directory not starting with <code>_</code> will be copied as-is to the <code>_site</code> output. Hugo keeps all static content under <code>static</code>. You should therefore move it all there.
+With Jekyll, something that looked like</p>
+<pre><code>▾ &lt;root&gt;/
+    ▾ images/
+        logo.png
+</code></pre>
+<p>should become</p>
+<pre><code>▾ &lt;root&gt;/
+    ▾ static/
+        ▾ images/
+            logo.png
+</code></pre>
+<p>Additionally, you'll want any files that should reside at the root (such as <code>CNAME</code>) to be moved to <code>static</code>.</p>
+<h2 id="create-your-hugo-configuration-file">Create your Hugo configuration file</h2>
+<p>Hugo can read your configuration as JSON, YAML or TOML. Hugo supports parameters custom configuration too. Refer to the <a href="/overview/configuration/">Hugo configuration documentation</a> for details.</p>
+<h2 id="set-your-configuration-publish-folder-to-_site">Set your configuration publish folder to <code>_site</code></h2>
+<p>The default is for Jekyll to publish to <code>_site</code> and for Hugo to publish to <code>public</code>. If, like me, you have <a href="http://blog.blindgaenger.net/generate_github_pages_in_a_submodule.html"><code>_site</code> mapped to a git submodule on the <code>gh-pages</code> branch</a>, you'll want to do one of two alternatives:</p>
+<ol>
+<li>
+<p>Change your submodule to point to map <code>gh-pages</code> to public instead of <code>_site</code> (recommended).</p>
+<pre><code> git submodule deinit _site
+ git rm _site
+ git submodule add -b gh-pages git@github.com:your-username/your-repo.git public
+</code></pre>
+</li>
+<li>
+<p>Or, change the Hugo configuration to use <code>_site</code> instead of <code>public</code>.</p>
+<pre><code> {
+     ..
+     &quot;publishdir&quot;: &quot;_site&quot;,
+     ..
+ }
+</code></pre>
+</li>
+</ol>
+<h2 id="convert-jekyll-templates-to-hugo-templates">Convert Jekyll templates to Hugo templates</h2>
+<p>That's the bulk of the work right here. The documentation is your friend. You should refer to <a href="http://jekyllrb.com/docs/templates/">Jekyll's template documentation</a> if you need to refresh your memory on how you built your blog and <a href="/layout/templates/">Hugo's template</a> to learn Hugo's way.</p>
+<p>As a single reference data point, converting my templates for <a href="http://heyitsalex.net/">heyitsalex.net</a> took me no more than a few hours.</p>
+<h2 id="convert-jekyll-plugins-to-hugo-shortcodes">Convert Jekyll plugins to Hugo shortcodes</h2>
+<p>Jekyll has <a href="http://jekyllrb.com/docs/plugins/">plugins</a>; Hugo has <a href="/doc/shortcodes/">shortcodes</a>. It's fairly trivial to do a port.</p>
+<h3 id="implementation">Implementation</h3>
+<p>As an example, I was using a custom <a href="https://github.com/alexandre-normand/alexandre-normand/blob/74bb12036a71334fdb7dba84e073382fc06908ec/_plugins/image_tag.rb"><code>image_tag</code></a> plugin to generate figures with caption when running Jekyll. As I read about shortcodes, I found Hugo had a nice built-in shortcode that does exactly the same thing.</p>
+<p>Jekyll's plugin:</p>
+<pre><code>module Jekyll
+  class ImageTag &lt; Liquid::Tag
+    @url = nil
+    @caption = nil
+    @class = nil
+    @link = nil
+    // Patterns
+    IMAGE_URL_WITH_CLASS_AND_CAPTION =
+    IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK = /(\w+)(\s+)((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;(\s+)-&gt;((https?:\/\/|\/)(\S+))(\s*)/i
+    IMAGE_URL_WITH_CAPTION = /((https?:\/\/|\/)(\S+))(\s+)&quot;(.*?)&quot;/i
+    IMAGE_URL_WITH_CLASS = /(\w+)(\s+)((https?:\/\/|\/)(\S+))/i
+    IMAGE_URL = /((https?:\/\/|\/)(\S+))/i
+    def initialize(tag_name, markup, tokens)
+      super
+      if markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION_AND_LINK
+        @class   = $1
+        @url     = $3
+        @caption = $7
+        @link = $9
+      elsif markup =~ IMAGE_URL_WITH_CLASS_AND_CAPTION
+        @class   = $1
+        @url     = $3
+        @caption = $7
+      elsif markup =~ IMAGE_URL_WITH_CAPTION
+        @url     = $1
+        @caption = $5
+      elsif markup =~ IMAGE_URL_WITH_CLASS
+        @class = $1
+        @url   = $3
+      elsif markup =~ IMAGE_URL
+        @url = $1
+      end
+    end
+    def render(context)
+      if @class
+        source = &quot;&lt;figure class='#{@class}'&gt;&quot;
+      else
+        source = &quot;&lt;figure&gt;&quot;
+      end
+      if @link
+        source += &quot;&lt;a href=\&quot;#{@link}\&quot;&gt;&quot;
+      end
+      source += &quot;&lt;img src=\&quot;#{@url}\&quot;&gt;&quot;
+      if @link
+        source += &quot;&lt;/a&gt;&quot;
+      end
+      source += &quot;&lt;figcaption&gt;#{@caption}&lt;/figcaption&gt;&quot; if @caption
+      source += &quot;&lt;/figure&gt;&quot;
+      source
+    end
+  end
+end
+Liquid::Template.register_tag('image', Jekyll::ImageTag)
+</code></pre>
+<p>is written as this Hugo shortcode:</p>
+<pre><code>&lt;!-- image --&gt;
+&lt;figure {{ with .Get &quot;class&quot; }}class=&quot;{{.}}&quot;{{ end }}&gt;
+    {{ with .Get &quot;link&quot;}}&lt;a href=&quot;{{.}}&quot;&gt;{{ end }}
+        &lt;img src=&quot;{{ .Get &quot;src&quot; }}&quot; {{ if or (.Get &quot;alt&quot;) (.Get &quot;caption&quot;) }}alt=&quot;{{ with .Get &quot;alt&quot;}}{{.}}{{else}}{{ .Get &quot;caption&quot; }}{{ end }}&quot;{{ end }} /&gt;
+    {{ if .Get &quot;link&quot;}}&lt;/a&gt;{{ end }}
+    {{ if or (or (.Get &quot;title&quot;) (.Get &quot;caption&quot;)) (.Get &quot;attr&quot;)}}
+    &lt;figcaption&gt;{{ if isset .Params &quot;title&quot; }}
+        {{ .Get &quot;title&quot; }}{{ end }}
+        {{ if or (.Get &quot;caption&quot;) (.Get &quot;attr&quot;)}}&lt;p&gt;
+        {{ .Get &quot;caption&quot; }}
+        {{ with .Get &quot;attrlink&quot;}}&lt;a href=&quot;{{.}}&quot;&gt; {{ end }}
+            {{ .Get &quot;attr&quot; }}
+        {{ if .Get &quot;attrlink&quot;}}&lt;/a&gt; {{ end }}
+        &lt;/p&gt; {{ end }}
+    &lt;/figcaption&gt;
+    {{ end }}
+&lt;/figure&gt;
+&lt;!-- image --&gt;
+</code></pre>
+<h3 id="usage">Usage</h3>
+<p>I simply changed:</p>
+<pre><code>{% image full http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg &quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were &quot;having fun&quot; and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; -&gt;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/ %}
+</code></pre>
+<p>to this (this example uses a slightly extended version named <code>fig</code>, different than the built-in <code>figure</code>):</p>
+<pre><code>{{% fig class=&quot;full&quot; src=&quot;http://farm5.staticflickr.com/4136/4829260124_57712e570a_o_d.jpg&quot; title=&quot;One of my favorite touristy-type photos. I secretly waited for the good light while we were having fun and took this. Only regret: a stupid pole in the top-left corner of the frame I had to clumsily get rid of at post-processing.&quot; link=&quot;http://www.flickr.com/photos/alexnormand/4829260124/in/set-72157624547713078/&quot; %}}
+</code></pre>
+<p>As a bonus, the shortcode named parameters are, arguably, more readable.</p>
+<h2 id="finishing-touches">Finishing touches</h2>
+<h3 id="fix-content">Fix content</h3>
+<p>Depending on the amount of customization that was done with each post with Jekyll, this step will require more or less effort. There are no hard and fast rules here except that <code>hugo server --watch</code> is your friend. Test your changes and fix errors as needed.</p>
+<h3 id="clean-up">Clean up</h3>
+<p>You'll want to remove the Jekyll configuration at this point. If you have anything else that isn't used, delete it.</p>
+<h2 id="a-practical-example-in-a-diff">A practical example in a diff</h2>
+<p><a href="http://heyitsalex.net/">Hey, it's Alex</a> was migrated in less than a <em>father-with-kids day</em> from Jekyll to Hugo. You can see all the changes (and screw-ups) by looking at this <a href="https://github.com/alexandre-normand/alexandre-normand/compare/869d69435bd2665c3fbf5b5c78d4c22759d7613a...b7f6605b1265e83b4b81495423294208cc74d610">diff</a>.</p>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=%2fBlog%2f2014%2f03%2fmigrate-from-jekyll%2f" title="Share on Facebook"><span class="fab fa-facebook-f fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fBlog%2f2014%2f03%2fmigrate-from-jekyll%2f" title="Share on LinkedIn"><span class="fab fa-linkedin-in fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/intent/tweet?url=%2fBlog%2f2014%2f03%2fmigrate-from-jekyll%2f&amp;text=Migrate%20to%20Hugo%20from%20Jekyll" title="Tweet this"><span class="fab fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar">
+  
+  
+        <section class="sidebar-module">
+    <h4>Recentes</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/Blog/2022/02/2022-02-10-atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio.pt-br/">Atualização: Instalação R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/11/2021-11-15-teste-nova/">Teste nova</a></li>
+
+<li><a href="/Blog/2021/11/2021-11-15-nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+
+<li><a href="/Blog/2021/11/2020-01-31-instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/10/2020-02-17-classes-e-objetos-em-r/">Classes e objetos</a></li>
+
+    </ol>
+  </section>
+
+
+  
+
+  
+  <section class="sidebar-module" id="LinkSide">
+    <h4>Links Rápidos</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://example.com">Link 1</a></li>
+      
+      <li><a href="https://example.org">Teste Link 2</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

@@ -1,0 +1,139 @@
+---
+title: 'Atualização: Instalação R e Rstudio'
+author: 'William Barbosa'
+date: '2022-02-10'
+slug: atualização-instalação-r-e-rstudio.pt-br
+categories:
+   - Instalação e Configurações
+---
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  comment = "#>", echo = FALSE, fig.width = 6
+)
+```
+
+
+# Introdução
+
+Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de _Ciências Sociais Aplicadas_ demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas. Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de _Ciências Sociais Aplicadas_ demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.
+
+R é uma linguagem de programação muito utilizada no Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua  utilização por profissionais, como por exemplo no mercado financeiro. A curva de aprendizado dessa linguagem é muito elevada, com um pouco de força de vontade e acesso à internet, qualquer pessoa pode evoluir rapidamente.
+
+Baseando-se na linguagem S, o **R** originalmente surgiu em meados de 1990. O R é uma linguagem poderosa na manipulação e análise de dados, contendo uma enorme variedade de técnicas estatísticas, tais como modelos lineares, não lineares, testes estatísticos, séries temporais, espaciais, classificação e agrupamento de dados. Uma das principais vantagens do R é que ele é disponibilizado como Software Livre e pode ser executado na maioria dos sistemas operacionais (inclusive em dispositivos móveis como o Android).
+
+Uma segunda vantagem da utilização do R é que também existe uma grande variedade de pacotes que auxiliam nas mais diversas tarefas rotineiras, tais como a manipulação de dados, por exemplo com o **dplyr**; ou a visualização gráfica com o **ggplot2**. A terceira vantagem é que existem muitas listas de discussões que podem auxiliar no entendimento da linguagem e de funções de algum pacote em específico. A pergunta "será que é possível fazer com R?" deve ser substituída para "como fazer em R?". Sim, o R é capaz de fazer inúmeras coisas, que vão desde salvar uma base de dados em um formato em particular, até páginas e aplicações web.
+
+## Objetivo
+
+Apresentar uma breve introdução à linguagem R e sua instalação. Para otimizar a utilização da linguagem, vamos instalar o Rstudio que é uma IDE que fornece recursos e _addins_ muito úteis ao dia a dia. Para a instalação é recomendado que primeiro seja instalado o R e posteriormente o Rstudio.
+
+Em primeiro lugar é preciso entrar no site do repositório do R
+ <a href="https://brieger.esalq.usp.br/CRAN/" style="color:blue">clicando aqui</a>. Note que é possível baixar para Linux, Mac e Windows. Para a instalação no Windows, é só clicar na terceira opção **Download R for Windows**. Após o download do instalador, é só executá-lo e dar as devidas permissões para realizar o procedimento da instalação. Uma dica é quando aparecer a tela abaixo, modificar o diretório para uma pasta onde não necessite de permissão do administrador para futuras instalações de pacotes. Geralmente o instalador vai indicar que a pasta a ser instalada será "Program Files", portanto, sugere-se a modificação para outra, no meu caso, indiquei a pasta "Documents".
+
+Agora o próximo passo é a instalação do Rstudio. A grosso modo, essa é uma interface gráfica para executar e criar códigos, tanto de R, como de outras linguages. Apesar de ser um software pago, existe uma versão gratuita que pode ser utilizada e atende todas as necessidade de um usuário comum ou que necessite apenas a realização de análises em seu desktop. Para isso, deve-se baixar o **RStudio Desktop** em sua versão FREE <a href="https://rstudio.com/products/rstudio/download/#download" style="color:blue">clicando aqui</a>.
+
+Pronto, tudo já está instalado. Agora devemos abrir o Rstudio e ele já irá busar a instalação do R automaticamente. Ao abrirmos o programa, aperte as teclas **ctrl + shift + N** em conjunto, posteriormente nos deparamos com a seguinte tela:
+![](/Blog/gerais_site/Imagens_Posts/rstudio.png)
+
+Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A **primeira** é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nesse campo). A **segunda** área é onde se localiza o _rscript_ (ou rotina) que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo em uma pasta externa no PC e possuirá a extensão **.R**. A **terceira** concentra algumas abas muito importantes: _package_ que é onde podemos realizar a instalação manualmente de pacotes, o _plots_ que auxilia na visualização de resultados gráficos e o _help_, fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a **quarta** área é o _environment_ ou podemos chamar de _workspace_ que concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções. 
+
+## Conceitos iniciais 
+
+A primeira coisa que devemos aprender é que com o R podemos realizar a mesma tarefa de diversas maneiras. Podemos utilizar as funções do R _base_ (são funções nativas do R, isto é, não são oriundas de pacotes externos) ou funções de pacotes ou _package_. Os pacotes são elaborados e submetidos ao repositório do R. A título de curiosidade, atualmente o total de pacotes disponíveis é de <a href="https://cran.r-project.org/web/packages/" style="color:blue">18.917</a> (em 10/02/2022).
+
+Para instalar um pacote, há duas maneiras bem simples: clicando em "Packages" (conforme o terceiro espaço demonstrado acima) e posteriormente clicar em "install". A segunda opção seria instalar (neste exemplo vamos instalar o pacote "MASS") via linha de comando "install.packages('MASS')". Existem outras maneiras de se instalar um pacote, por exemplo, ao invés de instalar diretamente do CRAM, pode ser baixado um arquivo e instalar _offline_ por meio de um pendrive ou até mesmo via Github, mas estas opções serão tratadas em outro momento.
+
+Há um esclarecimento importante: tudo que estiver após um **#** será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar breves explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois(ou +) anos. Qual seria a chance de lembrar da rotina inteira? Então, aquele comentário poderá lhe ajudar a lembrar do motivo para tal procedimento. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos como a função **print**:
+
+```{r, class.output = "bordepos", class.source="bordepre",echo=TRUE}
+# Este é um comentário
+print("Hello, World!")
+```
+
+Observe que tudo que for _string_, deverá estar dentro de aspas, que pode ser a simples ou dupla:
+
+```{r, class.output = "bordepos", class.source="bordepre", echo=TRUE}
+print("aspas duplas")
+print('aspas simples')
+```
+
+A grosso modo, uma _string_ é um ou uma sequência de caracteres e é por isso que devemos indicar para o R que o argumento dentro da função que irá "printar" na tela será um caractere ou palavra. Quando estamos trabalhando com números e desejamos que ele seja interpretado como número, basta colocar o valor sem a aspas. Podemos mandar ele printar a soma 1+2: 
+
+```{r, class.output = "bordepos", class.source="bordepre",echo=TRUE}
+print(1) # pritando um valor numérico
+print(1+2) # exibindo a soma de dois números
+```
+
+E como faremos em uma situação em que queremos exibir a soma como uma _string_? Para isso podemos utilizar a expressão entre aspas. Caso o objetivo seja a união (ou concatenar) dos valores, devemos aplicar a função **paste0**. Todo resultado dessa função será uma _string_, guarde isso (perceba que o resultado estará entre aspas, indicando que será um caractere).
+
+```{r, class.output = "bordepos", class.source="bordepre",echo=TRUE}
+print("1+2")
+paste0(1) # pritando um valor numérico
+paste0(1+2) # exibindo a soma de dois números em que a saída será uma string
+paste0('A','B') # exibindo a união de dois caracteres
+```
+
+# Conclusão
+Neste post abordei como e onde baixar/instalar o R e Rstudio. Adicionalmente, algumas funções e características básicas (muito), como classes numéricas e caracteres, bem como, a instalação de pacotes e estrutura básica do Rstudio. No próximo post, vou realizar um aprofundamento sobre tipos de dados, variáveis, vetores, listas e data frame. 
+
+
+```{css, echo=FALSE}
+body{
+      font-size: 12px;
+}
+
+td {
+  font-size: 8px;
+}
+h1.title {
+  font-size: 38px;
+  color: red!important;
+}
+
+h1 {
+  font-size: 28px;
+  color: black!important;
+}
+h2 { 
+    font-size: 22px;
+  color: DarkBlue;
+}
+h3 {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+}
+code.r{ 
+    font-size: 12px;
+}
+pre {
+    font-size: 14px;
+}
+p{
+    color: black!important;
+    font-size:20px!important;
+}
+.bordepre{
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  font-size: 12px;
+  padding: 1mm;
+  color: black;
+  font-weight: normal;
+  background-color:#F5F5F5;
+    
+}
+.bordepos {
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  color: black;
+  background-color:#F5F5F5;
+  padding: 1mm;
+  font-size: 12px;
+}
+
+```

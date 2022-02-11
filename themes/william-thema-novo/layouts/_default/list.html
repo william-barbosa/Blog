@@ -29,7 +29,8 @@
 
 {{ $truncate := default true .Site.Params.truncate }}
 {{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
-{{ range $paginator.Pages }}
+{{ range $paginator.Pages.ByDate.Reverse }}
+<!-- foi adicionado ".ByDate.Reverse" para que as postagens fossem dispostas de forma decrescente pela data -->
 {{ if $truncate }}
 {{ .Render "summary" }}
 {{ else }}

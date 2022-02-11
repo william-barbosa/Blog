@@ -7,7 +7,7 @@
 
 
 <meta property="og:title" content="Sobre" />
-<meta property="og:description" content=".col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.coluna-inteira{width: 100%;overflow:hidden;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}." />
+<meta property="og:description" content=".col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.coluna-inteira{width: 100%;overflow:hidden;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}.column-right{float: right;width: 20%;text-align: right;margin-top: 25px;}.comment{background-color: #DBDBDB;padding: 10px;border: 1px solid black;margin-left: 20px;border-radius: 5px;font-style: italic;}.linha-divisoria {border: 0;height: 1px;background: #333;background-image: linear-gradient(to right, #ccc, #333, #ccc);}Nome: William Barbosa" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/Blog/perfil/" />
 
@@ -16,7 +16,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Sobre"/>
-<meta name="twitter:description" content=".col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.coluna-inteira{width: 100%;overflow:hidden;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}."/>
+<meta name="twitter:description" content=".col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.coluna-inteira{width: 100%;overflow:hidden;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}.column-right{float: right;width: 20%;text-align: right;margin-top: 25px;}.comment{background-color: #DBDBDB;padding: 10px;border: 1px solid black;margin-left: 20px;border-radius: 5px;font-style: italic;}.linha-divisoria {border: 0;height: 1px;background: #333;background-image: linear-gradient(to right, #ccc, #333, #ccc);}Nome: William Barbosa"/>
 <meta name="generator" content="Hugo 0.62.2" />
 
 
@@ -114,10 +114,12 @@ body {
     width: 300px!important;
     border: 1px solid rgb(255, 255, 255)!important;  
     border-radius: 5px;
+    position: fixed!important;
 }
 #LinkSide{ 
     border: 1px solid rgb(255, 255, 255)!important;
-    margin-top: 30px!important;
+    margin-top: 170px!important;
+    position: fixed!important;
 }
 .sidebar-module a {
     color: blue!important;
@@ -144,22 +146,10 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
  
 p, li{
     color: black!important;
-    font-size:15px;
+    font-size:15px!important;
 }
 
  
@@ -253,12 +243,7 @@ p, li{
     font-family:   sans-serif!important;
 }
  
-
-.hero.is-info .title{
-    color: rgb(228, 15, 15);
-    font-family: "Lucinda Grande";
-   
-}
+ 
 
 </style>
 
@@ -324,7 +309,7 @@ p, li{
     <section class="hero is-info is-medium">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="col-sm-6 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
+                <h2 class="col-sm-7 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
             </div>
 
         </div>
@@ -553,7 +538,7 @@ font-style: italic;
 
         </div> <!-- /.blog-main -->
 
-        <aside class="col-sm-3 ml-auto blog-sidebar">
+        <aside class="col-sm-3 ml-auto blog-sidebar ">
   
   
         <section class="sidebar-module">
@@ -561,15 +546,15 @@ font-style: italic;
     <ol class="list-unstyled">
 
 
+<li><a href="/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/">Atualização: Instalação R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+
 <li><a href="/Blog/2021/11/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></li>
 
 <li><a href="/Blog/2021/10/classes-e-objetos/">Classes e objetos</a></li>
 
-<li><a href="/Blog/2014/09/creating-a-new-theme/">Creating a New Theme</a></li>
-
-<li><a href="/Blog/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
-
-<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+<li><a href="/Blog/1/01/sobre/">Sobre</a></li>
 
     </ol>
   </section>
@@ -582,9 +567,9 @@ font-style: italic;
     <h4>Links Rápidos</h4>
     <ol class="list-unstyled">
       
-      <li><a href="https://example.com">Link 1</a></li>
+      <li><a href="https://rstudio.com/products/rstudio/download/#download">RStudio</a></li>
       
-      <li><a href="https://example.org">Teste Link 2</a></li>
+      <li><a href="https://brieger.esalq.usp.br/CRAN/">Use o R!</a></li>
       
     </ol>
   </section>

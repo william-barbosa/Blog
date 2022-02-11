@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<meta property="og:title" content="Atualização: Instalação R e Rstudio" />
+<meta property="og:description" content="IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas. Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/" />
+<meta property="article:published_time" content="2022-02-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-02-10T00:00:00+00:00" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Atualização: Instalação R e Rstudio"/>
+<meta name="twitter:description" content="IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas. Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog."/>
+<meta name="generator" content="Hugo 0.62.2" />
+
+
+    
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Atualização: Instalação R e Rstudio",
+  "url": "/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/",
+  "wordCount": "1496",
+  "datePublished": "2022-02-10T00:00:00+00:00",
+  "dateModified": "2022-02-10T00:00:00+00:00",
+  "author": {
+    "@type": "Person",
+    "name": "William Barbosa"
+  },
+  "keywords": "Instalação e Configurações"
+}
+</script>
+
+
+
+    <link rel="canonical" href="/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/">
+
+    <title>Atualização: Instalação R e Rstudio | Blog William Barbosa</title>
+
+    
+    <!-- combined, minified CSS -->
+    
+    <link href="/Blog/css/style.beb8012edc08ba10be012f079d618dc243812267efe62e11f22fe49618f976a4.css" rel="stylesheet" integrity="sha256-vrgBLtwIuhC&#43;AS8HnWGNwkOBImfv5i4R8i/klhj5dqQ=" crossorigin="anonymous">
+    
+
+    <!-- minified Font Awesome for SVG icons -->
+    
+    <script defer src="/Blog/js/fontawesome.min.f5072c55a0721857184db93a50561d7dc13975b4de2e19db7f81eb5f3fa57270.js" integrity="sha256-9QcsVaByGFcYTbk6UFYdfcE5dbTeLhnbf4HrXz&#43;lcnA=" crossorigin="anonymous"></script>
+
+    <!-- RSS 2.0 feed -->
+    
+
+    
+   
+   
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Blog William Barbosa  | Atualização: Instalação R e Rstudio</title>
+
+        <script
+      src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="  crossorigin="anonymous"></script>
+
+
+    
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+     
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/cmu-serif" type="text/css"/>    
+
+<style>
+ 
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
+.blog-description {
+  font-size: 1.1rem;
+  color: #999;
+}
+
+body {
+  font-family: 'CMUSerifRoman', 'sans-serif' !important;
+  color: black;
+   background: rgb(255, 255, 255)!important;  
+}
+
+
+.container{
+    padding: 35px 0px; 
+    padding-left: 35px!important;
+    padding-right: 0%!important;
+}
+
+ 
+.sidebar-module {
+     
+    max-width: 20rem!important;
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+    margin-left: 0!important; 
+    margin-right: 0!important;
+    width: 300px!important;
+    border: 1px solid rgb(255, 255, 255)!important;  
+    border-radius: 5px;
+    position: fixed!important;
+}
+#LinkSide{ 
+    border: 1px solid rgb(255, 255, 255)!important;
+    margin-top: 170px!important;
+    position: fixed!important;
+}
+.sidebar-module a {
+    color: blue!important;
+    text-decoration: none;
+    font-family: 'CMUSerifRoman','sans-serif'!important;
+    font-weight: normal!important;
+    font-style: normal!important;   
+}
+
+.sidebar-module a:hover{
+    color:white!important;
+    background-color:rgb(0, 128, 0)!important;
+}
+
+  
+.container .blog-post{
+ 
+    border-top: 1px solid #ccc!important;
+    margin-right: 0!important;
+    width: 800px!important;
+     
+   
+  
+}
+
+
+ 
+p, li{
+    color: black!important;
+    font-size:15px!important;
+}
+
+ 
+.navbar{ 
+     
+    background-color: rgb(58, 58, 58)!important;
+    padding-left: 50px!important;  
+}
+ 
+
+.navbar .navbar-brand .navbar-nav{   
+    color: white!important;
+    font-family: 'CMUSerifRoman','sans-serif' !important;
+    font-size: 20px!important;
+   
+}
+ 
+.container{
+    width: 100%;
+}
+.navbar .container .navbar-brand:hover{  
+    color: red!important;
+}
+.navbar .navbar-nav li a{
+    color: white!important;
+    font-family: 'CMUSerifRoman','sans-serif' !important;
+    font-size: 22px!important;
+}
+.navbar .navbar-nav li a:hover{
+    color:rgb(216, 216, 216)!important;
+}
+
+
+ 
+
+.dropdown .dropdown-menu .dropdown-item, .dropdown .dropdown-menu .dropdown-item:hover{
+    color:rgb(0, 0, 0)!important;
+}
+
+
+
+
+ 
+.blog-post {
+ 
+    margin-bottom: 4rem;    
+    color: black!important;
+}
+
+.blog-post-title{
+    color:black!important;
+    font-size:36px;
+}
+
+
+ 
+.blog-post #teste {
+    color: blue!important;
+    text-decoration: none;
+    font-family: 'CMUSerifRoman'!important;
+    font-weight: normal!important;
+    font-style: normal!important;
+}
+
+ 
+.btn-outline-primary, .btn-outline-primary.disabled, .btn-outline-primary:disabled{
+    color:black!important;
+    border-color: black!important;
+    font-family: 'CMUSerifRoman'!important;
+    font-weight: normal!important;
+    font-style: normal!important;
+}
+.btn-outline-primary:hover{
+    color:white!important;
+    background-color:rgb(0, 128, 0)!important;
+}
+
+ 
+.hero-body {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+    }
+ 
+.hero.is-info {
+    background-color: white!important;
+}
+    
+.hero .container .h2{
+    background-color: red;
+    font-family:   sans-serif!important;
+}
+ 
+ 
+
+</style>
+
+</head>
+
+
+
+<body>
+    <header>
+        <div class="container" id="navbar-container">
+            <nav class="navbar navbar-expand-lg fixed-top">
+               <a class="navbar-brand h1 mb-0" href="/Blog/">
+                <img src="/Blog/gerais_site/Imagem1.svg" width="60px" height="60px">
+               </a>
+                <button class="navbar-toggler ml-auto navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSite" aria-controls="navbarSite" aria-expanded="false"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSite">
+                    <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/">Home</a>
+                        </li>
+                    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/Perfil/">Sobre</a>
+                        </li>
+                        
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/Blog/2014/04/getting-started-with-hugo/">Leituras indicadas</a>
+                        </li>
+                            
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Área para alunos</a>
+                        </li>
+                        
+                    </ul>
+
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" id="dropMenu" href="#" data-bs-toggle="dropdown">
+                                Links úteis
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Teste 1</a>
+                                <a class="dropdown-item" href="#">Teste 2</a>
+                                <a class="dropdown-item" href="#">Teste 3</a>
+                            </div>
+
+                        </li>
+                    </ul>
+
+       
+
+                </div>
+
+
+
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero is-info is-medium">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h2 class="col-sm-7 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
+            </div>
+
+        </div>
+    </section>
+
+
+</body>
+
+
+
+  </head>
+
+  <body>
+
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+
+          
+
+
+<article class="blog-post">
+  <header>
+    <h2 class="blog-post-title" dir="auto"><a href="/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/">Atualização: Instalação R e Rstudio</a></h2>
+    <p class="blog-post-meta">
+<time datetime="2022-02-10T00:00:00Z">Feb 10, 2022</time>
+ in 
+<span class="fas fa-folder" aria-hidden="true"></span>&nbsp;<a href="/Blog/categories/instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%B5es/" rel="category tag">Instalação e Configurações</a>
+
+
+</p>
+  </header>
+  
+
+
+<div id="introdução" class="section level1">
+<h1>Introdução</h1>
+<p>Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de <em>Ciências Sociais Aplicadas</em> demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas. Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de <em>Ciências Sociais Aplicadas</em> demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.</p>
+<p>R é uma linguagem de programação muito utilizada no Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica. Destaca-se que essa linguagem não se limita somente aos pesquisadores, mas também é notável a sua utilização por profissionais, como por exemplo no mercado financeiro. A curva de aprendizado dessa linguagem é muito elevada, com um pouco de força de vontade e acesso à internet, qualquer pessoa pode evoluir rapidamente.</p>
+<p>Baseando-se na linguagem S, o <strong>R</strong> originalmente surgiu em meados de 1990. O R é uma linguagem poderosa na manipulação e análise de dados, contendo uma enorme variedade de técnicas estatísticas, tais como modelos lineares, não lineares, testes estatísticos, séries temporais, espaciais, classificação e agrupamento de dados. Uma das principais vantagens do R é que ele é disponibilizado como Software Livre e pode ser executado na maioria dos sistemas operacionais (inclusive em dispositivos móveis como o Android).</p>
+<p>Uma segunda vantagem da utilização do R é que também existe uma grande variedade de pacotes que auxiliam nas mais diversas tarefas rotineiras, tais como a manipulação de dados, por exemplo com o <strong>dplyr</strong>; ou a visualização gráfica com o <strong>ggplot2</strong>. A terceira vantagem é que existem muitas listas de discussões que podem auxiliar no entendimento da linguagem e de funções de algum pacote em específico. A pergunta “será que é possível fazer com R?” deve ser substituída para “como fazer em R?”. Sim, o R é capaz de fazer inúmeras coisas, que vão desde salvar uma base de dados em um formato em particular, até páginas e aplicações web.</p>
+<div id="objetivo" class="section level2">
+<h2>Objetivo</h2>
+<p>Apresentar uma breve introdução à linguagem R e sua instalação. Para otimizar a utilização da linguagem, vamos instalar o Rstudio que é uma IDE que fornece recursos e <em>addins</em> muito úteis ao dia a dia. Para a instalação é recomendado que primeiro seja instalado o R e posteriormente o Rstudio.</p>
+<p>Em primeiro lugar é preciso entrar no site do repositório do R
+<a href="https://brieger.esalq.usp.br/CRAN/" style="color:blue">clicando aqui</a>. Note que é possível baixar para Linux, Mac e Windows. Para a instalação no Windows, é só clicar na terceira opção <strong>Download R for Windows</strong>. Após o download do instalador, é só executá-lo e dar as devidas permissões para realizar o procedimento da instalação. Uma dica é quando aparecer a tela abaixo, modificar o diretório para uma pasta onde não necessite de permissão do administrador para futuras instalações de pacotes. Geralmente o instalador vai indicar que a pasta a ser instalada será “Program Files”, portanto, sugere-se a modificação para outra, no meu caso, indiquei a pasta “Documents”.</p>
+<p>Agora o próximo passo é a instalação do Rstudio. A grosso modo, essa é uma interface gráfica para executar e criar códigos, tanto de R, como de outras linguages. Apesar de ser um software pago, existe uma versão gratuita que pode ser utilizada e atende todas as necessidade de um usuário comum ou que necessite apenas a realização de análises em seu desktop. Para isso, deve-se baixar o <strong>RStudio Desktop</strong> em sua versão FREE <a href="https://rstudio.com/products/rstudio/download/#download" style="color:blue">clicando aqui</a>.</p>
+<p>Pronto, tudo já está instalado. Agora devemos abrir o Rstudio e ele já irá busar a instalação do R automaticamente. Ao abrirmos o programa, aperte as teclas <strong>ctrl + shift + N</strong> em conjunto, posteriormente nos deparamos com a seguinte tela:
+<img src="/Blog/gerais_site/Imagens_Posts/rstudio.png" /></p>
+<p>Pode-se dizer que existem quatro principais áreas de trabalho que serão muito utilizadas. A <strong>primeira</strong> é o console, que é onde aparecerão os resultados de algum comando executado (os comandos também podem ser digitados diretamente nesse campo). A <strong>segunda</strong> área é onde se localiza o <em>rscript</em> (ou rotina) que conterá os cógigos para determinadas tarefas que vamos realizar. Esse é um arquivo que pode ser salvo em uma pasta externa no PC e possuirá a extensão <strong>.R</strong>. A <strong>terceira</strong> concentra algumas abas muito importantes: <em>package</em> que é onde podemos realizar a instalação manualmente de pacotes, o <em>plots</em> que auxilia na visualização de resultados gráficos e o <em>help</em>, fornece ajuda e a documentação dos pacotes ou funções do R. Por fim, a <strong>quarta</strong> área é o <em>environment</em> ou podemos chamar de <em>workspace</em> que concentrará todos os objetos criados, tais como bases de dados importadas ou geradas, listas e funções.</p>
+</div>
+<div id="conceitos-iniciais" class="section level2">
+<h2>Conceitos iniciais</h2>
+<p>A primeira coisa que devemos aprender é que com o R podemos realizar a mesma tarefa de diversas maneiras. Podemos utilizar as funções do R <em>base</em> (são funções nativas do R, isto é, não são oriundas de pacotes externos) ou funções de pacotes ou <em>package</em>. Os pacotes são elaborados e submetidos ao repositório do R. A título de curiosidade, atualmente o total de pacotes disponíveis é de <a href="https://cran.r-project.org/web/packages/" style="color:blue">18.917</a> (em 10/02/2022).</p>
+<p>Para instalar um pacote, há duas maneiras bem simples: clicando em “Packages” (conforme o terceiro espaço demonstrado acima) e posteriormente clicar em “install”. A segunda opção seria instalar (neste exemplo vamos instalar o pacote “MASS”) via linha de comando “install.packages(‘MASS’)”. Existem outras maneiras de se instalar um pacote, por exemplo, ao invés de instalar diretamente do CRAM, pode ser baixado um arquivo e instalar <em>offline</em> por meio de um pendrive ou até mesmo via Github, mas estas opções serão tratadas em outro momento.</p>
+<p>Há um esclarecimento importante: tudo que estiver após um <strong>#</strong> será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar breves explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois(ou +) anos. Qual seria a chance de lembrar da rotina inteira? Então, aquele comentário poderá lhe ajudar a lembrar do motivo para tal procedimento. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos como a função <strong>print</strong>:</p>
+<pre class="r bordepre"><code># Este é um comentário
+print(&quot;Hello, World!&quot;)</code></pre>
+<pre class="bordepos"><code>#&gt; [1] &quot;Hello, World!&quot;</code></pre>
+<p>Observe que tudo que for <em>string</em>, deverá estar dentro de aspas, que pode ser a simples ou dupla:</p>
+<pre class="r bordepre"><code>print(&quot;aspas duplas&quot;)</code></pre>
+<pre class="bordepos"><code>#&gt; [1] &quot;aspas duplas&quot;</code></pre>
+<pre class="r bordepre"><code>print(&#39;aspas simples&#39;)</code></pre>
+<pre class="bordepos"><code>#&gt; [1] &quot;aspas simples&quot;</code></pre>
+<p>A grosso modo, uma <em>string</em> é um ou uma sequência de caracteres e é por isso que devemos indicar para o R que o argumento dentro da função que irá “printar” na tela será um caractere ou palavra. Quando estamos trabalhando com números e desejamos que ele seja interpretado como número, basta colocar o valor sem a aspas. Podemos mandar ele printar a soma 1+2:</p>
+<pre class="r bordepre"><code>print(1) # pritando um valor numérico</code></pre>
+<pre class="bordepos"><code>#&gt; [1] 1</code></pre>
+<pre class="r bordepre"><code>print(1+2) # exibindo a soma de dois números</code></pre>
+<pre class="bordepos"><code>#&gt; [1] 3</code></pre>
+<p>E como faremos em uma situação em que queremos exibir a soma como uma <em>string</em>? Para isso podemos utilizar a expressão entre aspas. Caso o objetivo seja a união (ou concatenar) dos valores, devemos aplicar a função <strong>paste0</strong>. Todo resultado dessa função será uma <em>string</em>, guarde isso (perceba que o resultado estará entre aspas, indicando que será um caractere).</p>
+<pre class="r bordepre"><code>print(&quot;1+2&quot;)</code></pre>
+<pre class="bordepos"><code>#&gt; [1] &quot;1+2&quot;</code></pre>
+<pre class="r bordepre"><code>paste0(1) # pritando um valor numérico</code></pre>
+<pre class="bordepos"><code>#&gt; [1] &quot;1&quot;</code></pre>
+<pre class="r bordepre"><code>paste0(1+2) # exibindo a soma de dois números em que a saída será uma string</code></pre>
+<pre class="bordepos"><code>#&gt; [1] &quot;3&quot;</code></pre>
+<pre class="r bordepre"><code>paste0(&#39;A&#39;,&#39;B&#39;) # exibindo a união de dois caracteres</code></pre>
+<pre class="bordepos"><code>#&gt; [1] &quot;AB&quot;</code></pre>
+</div>
+</div>
+<div id="conclusão" class="section level1">
+<h1>Conclusão</h1>
+<p>Neste post abordei como e onde baixar/instalar o R e Rstudio. Adicionalmente, algumas funções e características básicas (muito), como classes numéricas e caracteres, bem como, a instalação de pacotes e estrutura básica do Rstudio. No próximo post, vou realizar um aprofundamento sobre tipos de dados, variáveis, vetores, listas e data frame.</p>
+<style type="text/css">
+body{
+      font-size: 12px;
+}
+
+td {
+  font-size: 8px;
+}
+h1.title {
+  font-size: 38px;
+  color: red!important;
+}
+
+h1 {
+  font-size: 28px;
+  color: black!important;
+}
+h2 { 
+    font-size: 22px;
+  color: DarkBlue;
+}
+h3 {
+  font-size: 18px;
+  font-family: "Times New Roman", Times, serif;
+  color: DarkBlue;
+}
+code.r{ 
+    font-size: 12px;
+}
+pre {
+    font-size: 14px;
+}
+p{
+    color: black!important;
+    font-size:20px!important;
+}
+.bordepre{
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  font-size: 12px;
+  padding: 1mm;
+  color: black;
+  font-weight: normal;
+  background-color:#F5F5F5;
+    
+}
+.bordepos {
+  border: solid;
+  border-style:solid;
+  border-width: thin;
+  border-color: #A8A8A8;
+  color: black;
+  background-color:#F5F5F5;
+  padding: 1mm;
+  font-size: 12px;
+}
+
+</style>
+</div>
+
+
+  
+
+  
+  <hr>
+  <footer>
+
+  
+    <section>
+    <h4>Share</h4>
+    <nav class="nav sharing-icons">
+      <a class="nav-item" href="https://www.facebook.com/sharer/sharer.php?u=%2fBlog%2f2022%2f02%2fatualiza%25C3%25A7%25C3%25A3o-instala%25C3%25A7%25C3%25A3o-r-e-rstudio%2f" title="Share on Facebook"><span class="fab fa-facebook-f fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fBlog%2f2022%2f02%2fatualiza%25C3%25A7%25C3%25A3o-instala%25C3%25A7%25C3%25A3o-r-e-rstudio%2f" title="Share on LinkedIn"><span class="fab fa-linkedin-in fa-2x" aria-hidden="true"></span></a>
+      <a class="nav-item" href="https://twitter.com/intent/tweet?url=%2fBlog%2f2022%2f02%2fatualiza%25C3%25A7%25C3%25A3o-instala%25C3%25A7%25C3%25A3o-r-e-rstudio%2f&amp;text=Atualiza%c3%a7%c3%a3o%3a%20Instala%c3%a7%c3%a3o%20R%20e%20Rstudio" title="Tweet this"><span class="fab fa-twitter fa-2x"></span></a>
+    </nav>
+  </section>
+
+  
+
+  
+  </footer>
+  
+
+</article> 
+
+
+
+        </div> <!-- /.blog-main -->
+
+        <aside class="col-sm-3 ml-auto blog-sidebar ">
+  
+  
+        <section class="sidebar-module">
+    <h4>Recentes</h4>
+    <ol class="list-unstyled">
+
+
+<li><a href="/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/">Atualização: Instalação R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+
+<li><a href="/Blog/2021/11/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/10/classes-e-objetos/">Classes e objetos</a></li>
+
+<li><a href="/Blog/1/01/sobre/">Sobre</a></li>
+
+    </ol>
+  </section>
+
+
+  
+
+  
+  <section class="sidebar-module" id="LinkSide">
+    <h4>Links Rápidos</h4>
+    <ol class="list-unstyled">
+      
+      <li><a href="https://rstudio.com/products/rstudio/download/#download">RStudio</a></li>
+      
+      <li><a href="https://brieger.esalq.usp.br/CRAN/">Use o R!</a></li>
+      
+    </ol>
+  </section>
+  
+</aside>
+
+
+
+
+
+      </div> <!-- /.row -->
+    </div> <!-- /.container -->
+    
+
+    
+    <footer class="blog-footer">
+      <p dir="auto">
+      
+      Blog template created by <a href="https://twitter.com/mdo">@mdo</a>, ported to Hugo by <a href='https://twitter.com/mralanorth'>@mralanorth</a>.
+      
+      </p>
+      <p>
+      <a href="#">Back to top</a>
+      </p>
+    </footer>
+    
+
+  </body>
+
+</html>

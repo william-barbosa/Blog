@@ -9,7 +9,7 @@ theme = "william-thema-novo"
 # number of posts to show on home/category/tag pages (Default: 10)
 paginate = 5
 # number of words to use for summary on home/category/tag pages (Default: 70)
-summaryLength = 50
+summaryLength = 80
 # optionally override the site's footer with custom copyright text
 # copyright = "Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by-sa/4.0/)."
 #googleAnalytics = "UA-123-45"
@@ -23,12 +23,14 @@ publishDir = "docs/"
   page = "/:slug/"
 
 [[menu.sidebar]]
-  name = "Link 1"
-  url = "https://example.com"
+  name = "RStudio"
+  url = "https://rstudio.com/products/rstudio/download/#download"
+
 
 [[menu.sidebar]]
-  name = "Teste Link 2"
-  url = "https://example.org"
+  name = "Use o R!"
+  url = "https://brieger.esalq.usp.br/CRAN/"
+
 
 #[[menu.navbar]]
 #  name = "Link 1"
@@ -81,7 +83,7 @@ publishDir = "docs/"
     about = "Teste [Apagar aqui](http://v4-alpha.getbootstrap.com/examples/blog/)."
 
     # How many posts to show on the sidebar (Default: 5)
-    #num_recent_posts = 2
+    num_recent_posts = 5
 
   [params.social]
     # Optional, used for attribution in Twitter cards (ideally not a person

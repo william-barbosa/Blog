@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Blog William Barbosa</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Mon, 15 Nov 2021 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Feb 2022 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/Blog/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,7 +17,7 @@
       <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
       
       <guid>/Blog/2021/11/instalando-o-r-e-rstudio/</guid>
-      <description>IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.</description>
+      <description>IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.R é uma linguagem de programação muito utilizada no Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica.</description>
     </item>
     
     <item>
@@ -26,26 +26,16 @@
       <pubDate>Thu, 28 Oct 2021 00:00:00 +0000</pubDate>
       
       <guid>/Blog/2021/10/classes-e-objetos/</guid>
-      <description>IntroduçãoMuitos usuários possuem medo ou receio ao se deparar com a necessidade de digitar comandos, tanto no terminal do R, quanto na interface gráfica do Rstudio. É possível que o usuário possua dificuldade em decorar comando, mas isso é besteira. O Rstudio já facilita um bocado ao sugerir a função quando começamos a digitar, então, quando aparecer a sugestão é só apertar a tecla tab ou enter do teclado.</description>
+      <description>IntroduçãoMuitos usuários possuem medo ou receio ao se deparar com a necessidade de digitar comandos, tanto no terminal do R, quanto na interface gráfica do Rstudio. É possível que o usuário possua dificuldade em decorar comando, mas isso é besteira. O Rstudio já facilita um bocado ao sugerir a função quando começamos a digitar, então, quando aparecer a sugestão é só apertar a tecla tab ou enter do teclado. Um outro recurso muito eficiente é a utilização do help, que auxilia no entendimento dos argumentos da função que estamos aplicando, e que pode ser acessado diretamente pela interface gráfica do Rstudio, ou simplesmente colocando um sinal de interrogação e o nome do comando que estamos com dificuldade, como por exemplo: ?</description>
     </item>
     
     <item>
-      <title>Creating a New Theme</title>
-      <link>/Blog/2014/09/creating-a-new-theme/</link>
-      <pubDate>Sun, 28 Sep 2014 00:00:00 +0000</pubDate>
+      <title>Atualização: Instalação R e Rstudio</title>
+      <link>/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/</link>
+      <pubDate>Thu, 10 Feb 2022 00:00:00 +0000</pubDate>
       
-      <guid>/Blog/2014/09/creating-a-new-theme/</guid>
-      <description>Introdução para ver o que dá nesse post This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&#39;ll explain how Hugo uses templates and how you can organize your templates to create a theme.</description>
-    </item>
-    
-    <item>
-      <title>Migrate to Hugo from Jekyll</title>
-      <link>/Blog/2014/03/migrate-to-hugo-from-jekyll/</link>
-      <pubDate>Mon, 10 Mar 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/Blog/2014/03/migrate-to-hugo-from-jekyll/</guid>
-      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become</description>
+      <guid>/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/</guid>
+      <description>IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas. Este é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog.</description>
     </item>
     
     <item>
@@ -55,36 +45,6 @@
       
       <guid>/Blog/2021/11/nova-postagem-com-rmd/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Teste nova</title>
-      <link>/Blog/2021/11/teste-nova/</link>
-      <pubDate>Mon, 15 Nov 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/Blog/2021/11/teste-nova/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>/Blog/2014/04/hugo-template-primer/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/Blog/2014/04/hugo-template-primer/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>/Blog/2014/04/getting-started-with-hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>/Blog/2014/04/getting-started-with-hugo/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.</description>
     </item>
     
     <item>
@@ -103,7 +63,7 @@ Step 2. Build the Docs Hugo has its own example site which happens to also be th
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/Blog/1/01/sobre/</guid>
-      <description>.col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.coluna-inteira{width: 100%;overflow:hidden;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}.</description>
+      <description>.col2 {columns: 2 400px; /* number of columns and width in pixels*/-webkit-columns: 2 200px; /* chrome, safari */-moz-columns: 2 200px; /* firefox */}.column-left{float: left;width: 80%;text-align: left;}.coluna-inteira{width: 100%;overflow:hidden;text-align: left;}.column-center{display: inline-block;width: 33%;text-align: center;}.column-right{float: right;width: 20%;text-align: right;margin-top: 25px;}.comment{background-color: #DBDBDB;padding: 10px;border: 1px solid black;margin-left: 20px;border-radius: 5px;font-style: italic;}.linha-divisoria {border: 0;height: 1px;background: #333;background-image: linear-gradient(to right, #ccc, #333, #ccc);}Nome: William Barbosa</description>
     </item>
     
   </channel>

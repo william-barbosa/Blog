@@ -8,7 +8,9 @@
 
 <meta property="og:title" content="Migrate to Hugo from Jekyll" />
 <meta property="og:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &lt;root&gt;/ ▾ images/ logo.png  should become" />
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&#39;ll want any files that should reside at the root (such as CNAME) to be moved to static.
+Create your Hugo configuration file Hugo can read your configuration as JSON, YAML or TOML." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/Blog/2014/03/migrate-to-hugo-from-jekyll/" />
 <meta property="article:published_time" content="2014-03-10T00:00:00+00:00" />
@@ -19,7 +21,9 @@
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Migrate to Hugo from Jekyll"/>
 <meta name="twitter:description" content="Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
-▾ &lt;root&gt;/ ▾ images/ logo.png  should become"/>
+▾ &lt;root&gt;/ ▾ images/ logo.png  should become
+▾ &lt;root&gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&#39;ll want any files that should reside at the root (such as CNAME) to be moved to static.
+Create your Hugo configuration file Hugo can read your configuration as JSON, YAML or TOML."/>
 <meta name="generator" content="Hugo 0.62.2" />
 
 
@@ -118,10 +122,12 @@ body {
     width: 300px!important;
     border: 1px solid rgb(255, 255, 255)!important;  
     border-radius: 5px;
+    position: fixed!important;
 }
 #LinkSide{ 
     border: 1px solid rgb(255, 255, 255)!important;
-    margin-top: 30px!important;
+    margin-top: 170px!important;
+    position: fixed!important;
 }
 .sidebar-module a {
     color: blue!important;
@@ -148,22 +154,10 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
  
 p, li{
     color: black!important;
-    font-size:15px;
+    font-size:15px!important;
 }
 
  
@@ -257,12 +251,7 @@ p, li{
     font-family:   sans-serif!important;
 }
  
-
-.hero.is-info .title{
-    color: rgb(228, 15, 15);
-    font-family: "Lucinda Grande";
-   
-}
+ 
 
 </style>
 
@@ -328,7 +317,7 @@ p, li{
     <section class="hero is-info is-medium">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="col-sm-6 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
+                <h2 class="col-sm-7 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
             </div>
 
         </div>
@@ -521,7 +510,7 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
 
         </div> <!-- /.blog-main -->
 
-        <aside class="col-sm-3 ml-auto blog-sidebar">
+        <aside class="col-sm-3 ml-auto blog-sidebar ">
   
   
         <section class="sidebar-module">
@@ -529,15 +518,15 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     <ol class="list-unstyled">
 
 
+<li><a href="/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/">Atualização: Instalação R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/11/teste-nova/">Teste nova</a></li>
+
+<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+
 <li><a href="/Blog/2021/11/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></li>
 
 <li><a href="/Blog/2021/10/classes-e-objetos/">Classes e objetos</a></li>
-
-<li><a href="/Blog/2014/09/creating-a-new-theme/">Creating a New Theme</a></li>
-
-<li><a href="/Blog/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
-
-<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
 
     </ol>
   </section>
@@ -550,9 +539,9 @@ Liquid::Template.register_tag('image', Jekyll::ImageTag)
     <h4>Links Rápidos</h4>
     <ol class="list-unstyled">
       
-      <li><a href="https://example.com">Link 1</a></li>
+      <li><a href="https://rstudio.com/products/rstudio/download/#download">RStudio</a></li>
       
-      <li><a href="https://example.org">Teste Link 2</a></li>
+      <li><a href="https://brieger.esalq.usp.br/CRAN/">Use o R!</a></li>
       
     </ol>
   </section>

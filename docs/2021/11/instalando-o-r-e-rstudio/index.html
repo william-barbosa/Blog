@@ -7,7 +7,7 @@
 
 
 <meta property="og:title" content="Instalando o R e Rstudio" />
-<meta property="og:description" content="IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas." />
+<meta property="og:description" content="IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.R é uma linguagem de programação muito utilizada no Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/Blog/2021/11/instalando-o-r-e-rstudio/" />
 <meta property="article:published_time" content="2021-11-15T00:00:00+00:00" />
@@ -17,7 +17,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Instalando o R e Rstudio"/>
-<meta name="twitter:description" content="IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas."/>
+<meta name="twitter:description" content="IntroduçãoEste é um dos primeiros posts introdutórios sobre a utilização do R para análise de dados e modelagem econométrica que serão publicados neste blog. Decidi começar pelo R porque há um bom tempo já estou trabalhando com essa linguagem, bem como, porque vários colegas estudantes da áre de Ciências Sociais Aplicadas demonstram interesse, não só na aplicação de seus estudos, mas também para a libertação de softwares pagos ou das tediosas e ineficientes planilhas eletrônicas.R é uma linguagem de programação muito utilizada no Brasil e que vem se intensificando ao longo dos últimos anos entre os pesquisadores de diversas áreas na esfera acadêmica."/>
 <meta name="generator" content="Hugo 0.62.2" />
 
 
@@ -116,10 +116,12 @@ body {
     width: 300px!important;
     border: 1px solid rgb(255, 255, 255)!important;  
     border-radius: 5px;
+    position: fixed!important;
 }
 #LinkSide{ 
     border: 1px solid rgb(255, 255, 255)!important;
-    margin-top: 30px!important;
+    margin-top: 170px!important;
+    position: fixed!important;
 }
 .sidebar-module a {
     color: blue!important;
@@ -146,22 +148,10 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
  
 p, li{
     color: black!important;
-    font-size:15px;
+    font-size:15px!important;
 }
 
  
@@ -255,12 +245,7 @@ p, li{
     font-family:   sans-serif!important;
 }
  
-
-.hero.is-info .title{
-    color: rgb(228, 15, 15);
-    font-family: "Lucinda Grande";
-   
-}
+ 
 
 </style>
 
@@ -326,7 +311,7 @@ p, li{
     <section class="hero is-info is-medium">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="col-sm-6 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
+                <h2 class="col-sm-7 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
             </div>
 
         </div>
@@ -428,7 +413,7 @@ A segunda maneira é instalar via linha de comando. Essa maneira é bem mais rá
 ## package &#39;MASS&#39; successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-##  C:\Users\William\AppData\Local\Temp\Rtmp4iURjQ\downloaded_packages</code></pre>
+##  C:\Users\William\AppData\Local\Temp\Rtmp2h4f0i\downloaded_packages</code></pre>
 <p style="color:black; font-family:sans-serif;margin-bottom: 5px">
 Podemos iniciar com um importante esclarecimento: tudo que estiver após um <strong>#</strong> será um comentário. Ou seja, o R vai ler, contudo, não irá processar nenhum cálculo ou função que está após esse comentário. Em programação é muito útil quando desejamos omitir uma linha ou uma parte de um código sem necessariamente excluí-la, e principalmente, para que possamos colocar breves explicações sobre determinada linha ou função. Imagine a situação em que você fez um código e vai abrir depois de dois anos. Qual seria a chance de lembrar da rotina inteira? Então, aquele comentário poderá lhe ajudar a lembrar do motivo para tal procedimento. Vamos começar a executar comandos simples que todo iniciante já fez, como por exemplo, o mais clássico de todos como a função <strong>print</strong>:
 </p>
@@ -529,7 +514,7 @@ No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalm
 
         </div> <!-- /.blog-main -->
 
-        <aside class="col-sm-3 ml-auto blog-sidebar">
+        <aside class="col-sm-3 ml-auto blog-sidebar ">
   
   
         <section class="sidebar-module">
@@ -537,15 +522,15 @@ No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalm
     <ol class="list-unstyled">
 
 
+<li><a href="/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/">Atualização: Instalação R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+
 <li><a href="/Blog/2021/11/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></li>
 
 <li><a href="/Blog/2021/10/classes-e-objetos/">Classes e objetos</a></li>
 
-<li><a href="/Blog/2014/09/creating-a-new-theme/">Creating a New Theme</a></li>
-
-<li><a href="/Blog/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
-
-<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+<li><a href="/Blog/1/01/sobre/">Sobre</a></li>
 
     </ol>
   </section>
@@ -558,9 +543,9 @@ No post de hoje aprendemos como e onde baixar/instalar o R e Rstudio. Adicionalm
     <h4>Links Rápidos</h4>
     <ol class="list-unstyled">
       
-      <li><a href="https://example.com">Link 1</a></li>
+      <li><a href="https://rstudio.com/products/rstudio/download/#download">RStudio</a></li>
       
-      <li><a href="https://example.org">Teste Link 2</a></li>
+      <li><a href="https://brieger.esalq.usp.br/CRAN/">Use o R!</a></li>
       
     </ol>
   </section>

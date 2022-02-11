@@ -101,10 +101,12 @@ body {
     width: 300px!important;
     border: 1px solid rgb(255, 255, 255)!important;  
     border-radius: 5px;
+    position: fixed!important;
 }
 #LinkSide{ 
     border: 1px solid rgb(255, 255, 255)!important;
-    margin-top: 30px!important;
+    margin-top: 170px!important;
+    position: fixed!important;
 }
 .sidebar-module a {
     color: blue!important;
@@ -131,22 +133,10 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
  
 p, li{
     color: black!important;
-    font-size:15px;
+    font-size:15px!important;
 }
 
  
@@ -240,12 +230,7 @@ p, li{
     font-family:   sans-serif!important;
 }
  
-
-.hero.is-info .title{
-    color: rgb(228, 15, 15);
-    font-family: "Lucinda Grande";
-   
-}
+ 
 
 </style>
 
@@ -311,7 +296,7 @@ p, li{
     <section class="hero is-info is-medium">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="col-sm-6 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
+                <h2 class="col-sm-7 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
             </div>
 
         </div>
@@ -341,17 +326,14 @@ p, li{
 <article class="blog-post">
   <header>
     <h2 class="blog-post-title" dir="auto"><a href="/Blog/post/2015-07-23-r-rmarkdown/">Hello R Markdown1</a></h2>
-    <p class="blog-post-meta"><time datetime="2015-07-23T21:13:14-05:00">Jul 23, 2015</time> by Frida Gomam in 
-<span class="fas fa-folder" aria-hidden="true"></span>&nbsp;<a href="/Blog/categories/r/" rel="category tag">R</a>
-
-
-<span class="fas fa-tag" aria-hidden="true"></span>&nbsp;<a href="/Blog/tags/r-markdown/" rel="tag">R Markdown</a>, <a href="/Blog/tags/plot/" rel="tag">plot</a>, <a href="/Blog/tags/regression/" rel="tag">regression</a>
-
-</p>
+   
+   <p class="blog-post-meta is-size-6 has-text-grey-light">
+    Publicado em Jul 23, 2015
+  </p>
   </header>
   R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
-summary(cars)## speed dist ## Min. : 4.0 Min. : 2.
+summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.98 ## 3rd Qu.:19.0 3rd Qu.: 56.00 ## Max. :25.0 Max. :120.
  
 <a id="teste" href='/Blog/post/2015-07-23-r-rmarkdown/'>Leia Mais...</a>
 </article> 
@@ -365,7 +347,7 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.
 
         </div> <!-- /.blog-main -->
 
-        <aside class="col-sm-3 ml-auto blog-sidebar">
+        <aside class="col-sm-3 ml-auto blog-sidebar ">
   
   
         <section class="sidebar-module">
@@ -373,15 +355,15 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.
     <ol class="list-unstyled">
 
 
+<li><a href="/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/">Atualização: Instalação R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+
 <li><a href="/Blog/2021/11/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></li>
 
 <li><a href="/Blog/2021/10/classes-e-objetos/">Classes e objetos</a></li>
 
-<li><a href="/Blog/2014/09/creating-a-new-theme/">Creating a New Theme</a></li>
-
-<li><a href="/Blog/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
-
-<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+<li><a href="/Blog/1/01/sobre/">Sobre</a></li>
 
     </ol>
   </section>
@@ -394,9 +376,9 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.
     <h4>Links Rápidos</h4>
     <ol class="list-unstyled">
       
-      <li><a href="https://example.com">Link 1</a></li>
+      <li><a href="https://rstudio.com/products/rstudio/download/#download">RStudio</a></li>
       
-      <li><a href="https://example.org">Teste Link 2</a></li>
+      <li><a href="https://brieger.esalq.usp.br/CRAN/">Use o R!</a></li>
       
     </ol>
   </section>

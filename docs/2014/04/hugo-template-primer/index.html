@@ -7,7 +7,8 @@
 
 
 <meta property="og:title" content="(Hu)go Template Primer" />
-<meta property="og:description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates." />
+<meta property="og:description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates. The go docs provide more details." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/Blog/2014/04/hugo-template-primer/" />
 <meta property="article:published_time" content="2014-04-02T00:00:00+00:00" />
@@ -17,7 +18,8 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="(Hu)go Template Primer"/>
-<meta name="twitter:description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates."/>
+<meta name="twitter:description" content="Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
+This document is a brief primer on using go templates. The go docs provide more details."/>
 <meta name="generator" content="Hugo 0.62.2" />
 
 
@@ -117,10 +119,12 @@ body {
     width: 300px!important;
     border: 1px solid rgb(255, 255, 255)!important;  
     border-radius: 5px;
+    position: fixed!important;
 }
 #LinkSide{ 
     border: 1px solid rgb(255, 255, 255)!important;
-    margin-top: 30px!important;
+    margin-top: 170px!important;
+    position: fixed!important;
 }
 .sidebar-module a {
     color: blue!important;
@@ -147,22 +151,10 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
  
 p, li{
     color: black!important;
-    font-size:15px;
+    font-size:15px!important;
 }
 
  
@@ -256,12 +248,7 @@ p, li{
     font-family:   sans-serif!important;
 }
  
-
-.hero.is-info .title{
-    color: rgb(228, 15, 15);
-    font-family: "Lucinda Grande";
-   
-}
+ 
 
 </style>
 
@@ -327,7 +314,7 @@ p, li{
     <section class="hero is-info is-medium">
         <div class="hero-body">
             <div class="container has-text-centered">
-                <h2 class="col-sm-6 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
+                <h2 class="col-sm-7 mr-auto">Olá, meu nome é William Barbosa. Seja bem vindo ao meu blog! </h2>
             </div>
 
         </div>
@@ -626,7 +613,7 @@ so, such as in this example:</p>
 
         </div> <!-- /.blog-main -->
 
-        <aside class="col-sm-3 ml-auto blog-sidebar">
+        <aside class="col-sm-3 ml-auto blog-sidebar ">
   
   
         <section class="sidebar-module">
@@ -634,15 +621,15 @@ so, such as in this example:</p>
     <ol class="list-unstyled">
 
 
+<li><a href="/Blog/2022/02/atualiza%C3%A7%C3%A3o-instala%C3%A7%C3%A3o-r-e-rstudio/">Atualização: Instalação R e Rstudio</a></li>
+
+<li><a href="/Blog/2021/11/teste-nova/">Teste nova</a></li>
+
+<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
+
 <li><a href="/Blog/2021/11/instalando-o-r-e-rstudio/">Instalando o R e Rstudio</a></li>
 
 <li><a href="/Blog/2021/10/classes-e-objetos/">Classes e objetos</a></li>
-
-<li><a href="/Blog/2014/09/creating-a-new-theme/">Creating a New Theme</a></li>
-
-<li><a href="/Blog/2014/03/migrate-to-hugo-from-jekyll/">Migrate to Hugo from Jekyll</a></li>
-
-<li><a href="/Blog/2021/11/nova-postagem-com-rmd/">Nova postagem com Rmd</a></li>
 
     </ol>
   </section>
@@ -655,9 +642,9 @@ so, such as in this example:</p>
     <h4>Links Rápidos</h4>
     <ol class="list-unstyled">
       
-      <li><a href="https://example.com">Link 1</a></li>
+      <li><a href="https://rstudio.com/products/rstudio/download/#download">RStudio</a></li>
       
-      <li><a href="https://example.org">Teste Link 2</a></li>
+      <li><a href="https://brieger.esalq.usp.br/CRAN/">Use o R!</a></li>
       
     </ol>
   </section>

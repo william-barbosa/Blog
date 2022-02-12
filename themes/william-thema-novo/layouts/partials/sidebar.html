@@ -21,6 +21,17 @@
     </ol>
   </section>
   {{ end }}
+<!-- Até aqui está tudo certo -->
+
+<section class="sidebar-module" id="LinkSide">
+  <h4>{{"Tags" }}</h4>
+  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+  <span class="tag "><a href="{{ "tags" | absURL }}/{{ $name | urlize }}">{{ $name }}</a></span>
+{{ end }}
+</section>
+
+
+
 </aside><!-- /.blog-sidebar -->
 
 {{- /* vim: set ts=2 sw=2 et: */}}

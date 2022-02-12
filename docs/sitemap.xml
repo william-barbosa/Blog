@@ -18,6 +18,11 @@
   </url>
   
   <url>
+    <loc>/Blog/tags/config/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/Blog/categories/instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%B5es/</loc>
     <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
@@ -29,6 +34,11 @@
   
   <url>
     <loc>/Blog/posts/</loc>
+    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/Blog/tags/</loc>
     <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
   
@@ -59,11 +69,6 @@
   
   <url>
     <loc>/Blog/tags/regression/</loc>
-    <lastmod>2015-07-23T21:13:14-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/Blog/tags/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   

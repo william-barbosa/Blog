@@ -1,5 +1,5 @@
 ---
-author: Michael Henderson
+author: William Barbosa
 date: "2021-10-28"
 linktitle: Classes e objetos
 menu:

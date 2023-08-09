@@ -41,6 +41,24 @@ summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 2
     </item>
     
     <item>
+      <title>Leituras Indicadas</title>
+      <link>/Blog/area_para_alunos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Blog/area_para_alunos/</guid>
+      <description>Manipulação e programação em geral: RTeste 1Teste 2Manipulação e programação em geral: PythonTeste 1Teste 2Manipulação e programação em geral: Big DataTeste 1Teste 2RegressãoTeste 1Teste 2Séries temporaisTeste 1Teste 2Econometria EspacialTeste 1Teste 2body{font-size: 12px;}td {font-size: 8px;}h1.title {font-size: 38px;color: red!important;}h1 {font-size: 28px;color: rgb(255, 0, 0)!</description>
+    </item>
+    
+    <item>
+      <title>Leituras Indicadas</title>
+      <link>/Blog/leituras_indicadas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/Blog/leituras_indicadas/</guid>
+      <description>Manipulação e programação em geral: RTeste 1Teste 2Manipulação e programação em geral: PythonTeste 1Teste 2Manipulação e programação em geral: Big DataTeste 1Teste 2RegressãoTeste 1Teste 2Séries temporaisTeste 1Teste 2Econometria EspacialTeste 1Teste 2body{font-size: 12px;}td {font-size: 8px;}h1.title {font-size: 38px;color: red!important;}h1 {font-size: 28px;color: rgb(255, 0, 0)!</description>
+    </item>
+    
+    <item>
       <title>Sobre</title>
       <link>/Blog/perfil/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

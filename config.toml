@@ -2,7 +2,7 @@
 #
 baseurl = "https://william-barbosa.github.io/Blog/"
 languageCode = "pt-br"
-title = "Blog dataR"
+title = "Blog REconW"
 #theme = "hugo-theme-bootstrap4-blog"
 theme = "william-thema-novo"
 

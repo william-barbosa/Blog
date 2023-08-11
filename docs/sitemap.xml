@@ -3,85 +3,105 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/Blog/2021/10/classes-e-objetos/</loc>
+    <loc>https://william-barbosa.github.io/Blog/2021/10/classes-e-objetos/</loc>
     <lastmod>2021-10-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/</loc>
+    <loc>https://william-barbosa.github.io/Blog/</loc>
+    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://william-barbosa.github.io/Blog/categories/</loc>
+    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://william-barbosa.github.io/Blog/categories/category/</loc>
+    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://william-barbosa.github.io/Blog/posts/</loc>
+    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://william-barbosa.github.io/Blog/tags/tag1/</loc>
+    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://william-barbosa.github.io/Blog/tags/tag2/</loc>
+    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://william-barbosa.github.io/Blog/tags/</loc>
+    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://william-barbosa.github.io/Blog/2023/08/teeste/</loc>
+    <lastmod>2023-08-11T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://william-barbosa.github.io/Blog/tags/config/</loc>
     <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/categories/</loc>
+    <loc>https://william-barbosa.github.io/Blog/categories/instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%B5es/</loc>
     <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/tags/config/</loc>
+    <loc>https://william-barbosa.github.io/Blog/2022/02/instala%C3%A7%C3%A3o-r-e-rstudio/</loc>
     <lastmod>2022-02-10T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/categories/instala%C3%A7%C3%A3o-e-configura%C3%A7%C3%B5es/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/Blog/2022/02/instala%C3%A7%C3%A3o-r-e-rstudio/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/Blog/posts/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/Blog/tags/</loc>
-    <lastmod>2022-02-10T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/Blog/post/2015-07-23-r-rmarkdown/</loc>
+    <loc>https://william-barbosa.github.io/Blog/post/2015-07-23-r-rmarkdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/tags/plot/</loc>
+    <loc>https://william-barbosa.github.io/Blog/tags/plot/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/post/</loc>
+    <loc>https://william-barbosa.github.io/Blog/post/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/categories/r/</loc>
+    <loc>https://william-barbosa.github.io/Blog/categories/r/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/tags/r-markdown/</loc>
+    <loc>https://william-barbosa.github.io/Blog/tags/r-markdown/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/tags/regression/</loc>
+    <loc>https://william-barbosa.github.io/Blog/tags/regression/</loc>
     <lastmod>2015-07-23T21:13:14-05:00</lastmod>
   </url>
   
   <url>
-    <loc>/Blog/area_para_alunos/</loc>
+    <loc>https://william-barbosa.github.io/Blog/area_para_alunos/</loc>
   </url>
   
   <url>
-    <loc>/Blog/leituras_indicadas/</loc>
+    <loc>https://william-barbosa.github.io/Blog/leituras_indicadas/</loc>
   </url>
   
   <url>
-    <loc>/Blog/perfil/</loc>
+    <loc>https://william-barbosa.github.io/Blog/perfil/</loc>
   </url>
   
 </urlset>
